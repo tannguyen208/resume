@@ -84,7 +84,7 @@ Error generating stack: `+o.message+`
     justify-content: flex-end;
     gap: 16px;
   }
-`;function Gk(){const e=_.useRef(null),{scrollYProgress:t}=zg(),n=Fg(t);return console.log(n),_.useEffect(()=>{},[]),Ve.jsx(Wk,{children:Ve.jsxs(Ya.nav,{ref:e,transition:{ease:"easeOut",duration:2},className:"rs-actions",children:[Ve.jsx("a",{className:"rs-action btn-github",href:"https://github.com/tannguyen208",target:"_blank",children:"Github"}),Ve.jsx(Ya.a,{whileHover:{scale:1.1},children:Ve.jsx(Uk,{as:"a",href:Hk,className:"rs-action btn-download",title:"Download",download:!0})})]})})}const Kk=""+new URL("basic-info-25963894.svg",import.meta.url).href,Yk=Zu.main`
+`;function Gk(){const e=_.useRef(null),{scrollYProgress:t}=zg(),n=Fg(t);return console.log(n),_.useEffect(()=>{},[]),Ve.jsx(Wk,{children:Ve.jsxs(Ya.nav,{ref:e,transition:{ease:"easeOut",duration:2},className:"rs-actions",children:[Ve.jsx("a",{className:"rs-action btn-github",href:"https://github.com/tannguyen208",target:"_blank",children:"Github"}),Ve.jsx(Ya.a,{whileHover:{scale:1.1},children:Ve.jsx(Uk,{as:"a",href:Hk,className:"rs-action btn-download",title:"Download",download:!0})})]})})}const Kk=""+new URL("basic-info-14a0b237.svg",import.meta.url).href,Yk=Zu.main`
   padding: 1.5rem;
 
   .rs-info {

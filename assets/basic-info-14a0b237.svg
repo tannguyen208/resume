@@ -9,11 +9,11 @@
     <style class="style-fonts">
       @font-face {
       font-family: "Virgil";
-      src: url("./fonts/Virgil.woff2");
+      src: url("https://excalidraw.com/Virgil.woff2");
       }
       @font-face {
       font-family: "Cascadia";
-      src: url("./fonts/Cascadia.woff2");
+      src: url("https://excalidraw.com/Cascadia.woff2");
       }
     </style>
   </defs>
@@ -46,10 +46,10 @@
     <text x="0" y="0" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000"
       text-anchor="start" style="white-space: pre;" direction="ltr"
       dominant-baseline="text-before-edge">Name: Tan Nguyen Anh</text>
-    <text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#515151"
+    <text x="0" y="25" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000"
       text-anchor="start" style="white-space: pre;" direction="ltr"
       dominant-baseline="text-before-edge">Phone: +84 357.833.112</text>
-    <text x="0" y="50" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#515151"
+    <text x="0" y="50" font-family="Virgil, Segoe UI Emoji" font-size="20px" fill="#000000"
       text-anchor="start" style="white-space: pre;" direction="ltr"
       dominant-baseline="text-before-edge">Email: tanna48pct@gmail.com</text>
   </g><g
@@ -115,13 +115,16 @@
       dominant-baseline="text-before-edge">Summary</text>
     <text x="0" y="25.034461116242646" font-family="Virgil, Segoe UI Emoji"
       font-size="20.02756889299412px" fill="#000000" text-anchor="start" style="white-space: pre;"
-      direction="ltr" dominant-baseline="text-before-edge">* Software Engineer with 4+ years of experience building web applications with Javascript frameworks.</text>
+      direction="ltr" dominant-baseline="text-before-edge">* Software Engineer with 4+ years of
+  experience building web applications with Javascript frameworks.</text>
     <text x="0" y="50.06892223248529" font-family="Virgil, Segoe UI Emoji"
       font-size="20.02756889299412px" fill="#000000" text-anchor="start" style="white-space: pre;"
-      direction="ltr" dominant-baseline="text-before-edge">* Ability to work under pressure and manage tasks with less supervision.</text>
+      direction="ltr" dominant-baseline="text-before-edge">* Ability to work under pressure and
+  manage tasks with less supervision.</text>
     <text x="0" y="75.10338334872793" font-family="Virgil, Segoe UI Emoji"
       font-size="20.02756889299412px" fill="#000000" text-anchor="start" style="white-space: pre;"
-      direction="ltr" dominant-baseline="text-before-edge">* Have skills in solving problems and teamwork.</text>
+      direction="ltr" dominant-baseline="text-before-edge">* Have skills in solving problems and
+  teamwork.</text>
     <text x="0" y="100.13784446497058" font-family="Virgil, Segoe UI Emoji"
       font-size="20.02756889299412px" fill="#000000" text-anchor="start" style="white-space: pre;"
       direction="ltr" dominant-baseline="text-before-edge">* Willing to learn new technologies.</text>
