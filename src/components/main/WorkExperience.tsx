@@ -1,4 +1,17 @@
-export default function WorkExperience() {
+import Card from '@components/card/Card'
+import { memo } from 'react'
+
+export interface IWorkExperience {
+  name: string
+  time: string
+  roles: string[]
+}
+
+type IProps = {
+  workExperience: IWorkExperience[]
+}
+
+function WorkExperience({ workExperience }: IProps) {
   return (
     <section className="rs-content">
       <p className="rs-title">Work Experience</p>
@@ -24,7 +37,25 @@ export default function WorkExperience() {
           tasks
         </li>
       </ul>
+      <div className="flex flex-wrap" style={{ gap: 8 }}>
+        {workExperience.map((we) => (
+          <Card key={we.name}>
+            <div>
+              <p>
+                <span className="rs-text-title">{we.name}</span> - {we.time}
+              </p>
+              <ul>
+                {we.roles.map((role, index) => (
+                  <li key={index}>{role}</li>
+                ))}
+              </ul>
+            </div>
+          </Card>
+        ))}
+      </div>
     </section>
   )
 }
+
+export default memo(WorkExperience)
 

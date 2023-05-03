@@ -7,6 +7,38 @@
       "sourceUrl": "https://github.com/tannguyen208/chatgpt"
     }
   ],
+  "company_experiences": [
+    {
+      "name": "FPT Software",
+      "time": "2 Years",
+      "roles": [
+        "3 months as a ReactJS course mentor on Udemy.",
+        "Develop project structures, review code, and resolve technical problems related to front-end.",
+        "Solve all front-end related issues, and support members on teams.",
+        "Work as a BA to gather customer requirements."
+      ]
+    },
+    {
+      "name": "Sutrix Solutions",
+      "time": "1 Year",
+      "roles": [
+        "Develop mobile applications",
+        "Collaborate closely with other team members to plan, design, and develop the apps.",
+        "Give solutions to teams to improve the app’s performance.",
+        "Collaborate with team members to develop project structures, GIT flow ..."
+      ]
+    },
+    {
+      "name": "AMES SDC",
+      "time": "1 Year",
+      "roles": [
+        "Collaborate closely with other team members to plan, design, and develop the websites",
+        "Give solutions to customers to improve the website’s performance.",
+        "Collaborate with team members to develop project structures, GIT flow ...",
+        "Estimate the numbers of users using the website to give solutions to improve the performance of the website"
+      ]
+    }
+  ],
   "projects": [
     {
       "name": "Colors",
