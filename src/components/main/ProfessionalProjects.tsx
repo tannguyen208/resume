@@ -1,7 +1,7 @@
-import { Fragment, useEffect, useState } from 'react'
+import { Fragment, memo } from 'react'
 import Card from '@components/card/Card'
 
-interface Project {
+export interface IProject {
   name: string
   desc: string
   duration: string
@@ -12,31 +12,19 @@ interface Project {
   tool: string
 }
 
-interface OpenSourceProject {
+export interface IOpenSourceProject {
   name: string
   logo: string
   link: string
   sourceUrl: string
 }
 
-export default function ProfessionalProjects() {
-  const [openSource, setOpenSource] = useState<OpenSourceProject[]>([])
-  const [projects, setProjects] = useState<Project[]>([])
+type IProps = {
+  openSource: IOpenSourceProject[]
+  projects: IProject[]
+}
 
-  useEffect(() => {
-    const fetchProjects = async () => {
-      const response = await fetch(
-        'https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/projects.json'
-      )
-      const data = await response.json()
-
-      setOpenSource(data.open_source || [])
-      setProjects(data.projects || [])
-    }
-
-    fetchProjects()
-  }, [])
-
+function ProfessionalProjects({ openSource, projects }: IProps) {
   return (
     <section>
       <p className="rs-title">Professional Projects</p>
@@ -75,7 +63,7 @@ export default function ProfessionalProjects() {
               <tbody>
                 <tr>
                   <td>Project</td>
-                  <td className="project-name">{project.name}</td>
+                  <td className="rs-text-title">{project.name}</td>
                 </tr>
                 <tr>
                   <td>Description</td>
@@ -120,4 +108,6 @@ export default function ProfessionalProjects() {
     </section>
   )
 }
+
+export default memo(ProfessionalProjects)
 

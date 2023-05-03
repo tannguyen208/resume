@@ -24,9 +24,6 @@ const HeaderStyled = styled.header`
 
 export default function Header() {
   const navRef = useRef<HTMLDivElement>(null)
-  const { scrollYProgress } = useScroll()
-  const scaleX = useSpring(scrollYProgress)
-  console.log(scaleX)
 
   useEffect(() => {
     // const actionElements = document.querySelectorAll('.rs-action')

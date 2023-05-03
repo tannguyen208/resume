@@ -28,6 +28,10 @@ const GlobalStyle = createGlobalStyle`
     text-align: center; */
   }
 
+  ul {
+    margin: 0;
+  }
+
   .flex {
     display: flex;
   }
