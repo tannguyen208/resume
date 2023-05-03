@@ -9,7 +9,7 @@ const Container = styled.div`
 
   width: fit-content;
 
-  padding: 32px;
+  padding: 16px;
 
   border: 2px solid var(--primary-color);
   border-radius: 92% 8% 95% 5% / 4% 92% 8% 96%;

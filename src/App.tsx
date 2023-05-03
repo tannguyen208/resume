@@ -20,7 +20,6 @@ function App() {
       <GlobalStyle />
       <ThemeProvider theme={theme}>
         <motion.div className="progress-bar" style={{ scaleX }} />
-        <Header />
         <Main />
         {/* <Background /> */}
       </ThemeProvider>

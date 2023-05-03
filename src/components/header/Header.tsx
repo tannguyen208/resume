@@ -20,6 +20,10 @@ const HeaderStyled = styled.header`
     justify-content: flex-end;
     gap: 16px;
   }
+
+  .btn-download {
+    color: #fff;
+  }
 `
 
 export default function Header() {

@@ -6,9 +6,13 @@ import ProfessionalProjects, {
   IProject,
   IOpenSourceProject,
 } from './ProfessionalProjects'
+import Education from './Education'
+import AwardsAndRecognitions from './AwardsAndRecognitions'
 
 const MainStyled = styled.main`
   padding: 1.5rem;
+  max-width: 950px;
+  margin: 0 auto;
 
   .rs-info {
     margin: 0 auto;
@@ -35,6 +39,12 @@ const MainStyled = styled.main`
     & td {
       white-space: pre;
     }
+  }
+
+  footer {
+    margin-top: 1rem;
+    padding-top: 1rem;
+    border-top: 1px dashed #eee;
   }
 `
 
@@ -70,6 +80,9 @@ export default function Main() {
       <Info />
       <WorkExperience workExperience={workExperience} />
       <ProfessionalProjects openSource={openSource} projects={projects} />
+      <Education />
+      <AwardsAndRecognitions />
+      <footer>Made with ❤️ by TanNA</footer>
     </MainStyled>
   )
 }
