@@ -35,9 +35,16 @@ const MainStyled = styled.main`
 
   .rs-project {
     margin: 12px;
+    box-shadow: 2px 8px 4px 0px #f0f0f0;
 
     & td {
       white-space: pre;
+    }
+
+    &--logo {
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
     }
   }
 
