@@ -4,6 +4,7 @@ import Card from '@components/card/Card'
 export interface IProject {
   name: string
   desc: string
+  logo: string
   duration: string
   position: string
   size: number
@@ -44,7 +45,7 @@ function ProfessionalProjects({ openSource, projects }: IProps) {
                   />
                 </a>
                 <div className="flex-1">
-                  <p>ChatGPT AI</p>
+                  <p>{os.name}</p>
                   <a className="text-tiny" href={os.sourceUrl} target="_blank">
                     Source code
                   </a>
@@ -59,6 +60,11 @@ function ProfessionalProjects({ openSource, projects }: IProps) {
       <div className="flex flex-wrap">
         {projects.map((project) => (
           <Card key={project.name} className="rs-project">
+            <img
+              className="rs-project--logo"
+              src={project.logo}
+              alt={project.name}
+            />
             <table>
               <tbody>
                 <tr>
