@@ -6,8 +6,8 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     height: 100%;
-    color: var(--primary-color);
-    font-family: Virgil;
+    color: var(--text-color);
+    font-family: Aws-Regular;
     font-size: 1rem;
   }
 

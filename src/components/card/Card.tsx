@@ -5,16 +5,24 @@ const Container = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-around;
   gap: 16px;
 
+  border-radius: 8px;
+  box-shadow: 0px 8px 40px rgba(53, 119, 107, 0.12);
+  background-color: #fff;
   width: fit-content;
 
   padding: 16px;
 
-  border: 2px solid var(--primary-color);
-  border-radius: 92% 8% 95% 5% / 4% 92% 8% 96%;
-  justify-content: space-around;
-  color: var(--primary-color);
+  --transition-property: transform;
+  --transition-duration: 180ms;
+
+  transition: var(--transition-property) var(--transition-duration) ease-in-out;
+
+  :hover {
+    transform: scale(1.05);
+  }
 `
 
 type CardProps = {
