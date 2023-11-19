@@ -1,7 +1,6 @@
+import { useScroll, useSpring } from 'framer-motion'
 import { Fragment } from 'react'
 import { ThemeProvider } from 'styled-components'
-import { motion, useScroll, useSpring } from 'framer-motion'
-import Header from './components/header/Header'
 import Main from './components/main/Main'
 import theme from './theme'
 import GlobalStyle from './theme/globalStyles'
@@ -19,7 +18,6 @@ function App() {
     <Fragment>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <motion.div className="progress-bar" style={{ scaleX }} />
         <Main />
         {/* <Background /> */}
       </ThemeProvider>

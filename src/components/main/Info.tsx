@@ -4,8 +4,13 @@ import styled from 'styled-components'
 import Header from '@components/header/Header'
 
 const Container = styled.div`
+  .hi {
+    font-size: 2em;
+  }
   img {
-    margin-right: 1.5rem;
+    width: 180px;
+    height: 180px;
+    margin-right: 1rem;
   }
   a {
     color: var(--primary-color);
@@ -28,22 +33,8 @@ const Flex = styled.div`
 export default function Info() {
   return (
     <Container>
-      <Header />
-
       <Flex>
-        <img src={Avatar} width={132} height={132} alt="" />
-        <div>
-          <h1>Hi there!</h1>
-          <a href="https://github.com/tannguyen208" target="_blank">
-            <FaGithub size={24} />
-          </a>
-          <a href="https://twitter.com/tanna48pct" target="_blank">
-            <FaTwitter size={24} />
-          </a>
-          <a href="https://www.linkedin.com/in/tanna48pct" target="_blank">
-            <FaLinkedin size={24} />
-          </a>
-        </div>
+        <img src={Avatar} alt="tanna-resume" />
       </Flex>
       <div className="spacer" />
       <ul>

@@ -3,7 +3,10 @@
   line-height: 1.5;
   font-weight: 400;
 
-  --primary-color: #242424;
+  /* --primary-color: #242424; */
+  --text-color: rgb(53, 92, 125);
+  --primary-color: rgb(53, 92, 125);
+  --container-width: 1098px;
 
   --font-size-large: 32px;
 
@@ -19,8 +22,16 @@
 }
 
 @font-face {
-  font-family: Virgil;
-  src: url('./assets/fonts/Virgil.woff2');
+  font-family: Aws-Regular;
+  src: url('./assets/fonts/Aws-Regular.woff2');
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+  background: url('./assets/grid.png') repeat;
+  background-attachment: fixed;
 }
 
 h1,
@@ -35,6 +46,7 @@ a {
   margin: 0;
   margin-block: unset;
   margin-inline: unset;
+  text-decoration: none;
 }
 
 .progress-bar {

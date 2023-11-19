@@ -26,6 +26,10 @@ type IProps = {
 }
 
 function ProfessionalProjects({ openSource, projects }: IProps) {
+  const onLink = (link: string) => {
+    window.open(link, '_blank')
+  }
+
   return (
     <section>
       <p className="rs-title">Professional Projects</p>
@@ -34,8 +38,8 @@ function ProfessionalProjects({ openSource, projects }: IProps) {
           <p>* Community Sharing Projects (Open Source)</p>
           <div className="flex flex-wrap">
             {openSource.map((os) => (
-              <Card key={os.name} className="rs-project">
-                <a href={os.link} target="_blank" rel="noopener noreferrer">
+              <Card key={os.name} className="rs-project pointer">
+                <div className="flex" onClick={() => onLink(os.link)}>
                   <img
                     src={os.logo}
                     alt={os.name}
@@ -43,12 +47,16 @@ function ProfessionalProjects({ openSource, projects }: IProps) {
                     height={36}
                     className="pointer"
                   />
-                </a>
-                <div className="flex-1">
-                  <p>{os.name}</p>
-                  <a className="text-tiny" href={os.sourceUrl} target="_blank">
-                    Source code
-                  </a>
+                  <div style={{ width: 8 }} />
+                  <div className="flex-1 prj-details">
+                    <p>{os.name}</p>
+                    <a
+                      className="text-tiny"
+                      onClick={() => onLink(os.sourceUrl)}
+                    >
+                      Source code
+                    </a>
+                  </div>
                 </div>
               </Card>
             ))}
@@ -62,7 +70,9 @@ function ProfessionalProjects({ openSource, projects }: IProps) {
           <Card key={project.name} className="rs-project">
             <img
               className="rs-project--logo"
-              src={project.logo}
+              src={
+                new URL(`../../assets/${project.logo}`, import.meta.url).href
+              }
               alt={project.name}
             />
             <table>

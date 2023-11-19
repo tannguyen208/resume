@@ -1,7 +1,7 @@
 {
   "open_source": [
     {
-      "name": "ChatGPT AI",
+      "name": "AI ChatPad",
       "logo": "https://github.com/tannguyen208/chatgpt/blob/main/src/assets/favicon.png?raw=true",
       "link": "https://tannguyen208.github.io/chatgpt/",
       "sourceUrl": "https://github.com/tannguyen208/chatgpt"
@@ -46,7 +46,7 @@
       "duration": "Mar 2023 - Now",
       "position": "FullStack Developer",
       "size": 5,
-      "logo": "https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/prj-ames.png?raw=true",
+      "logo": "prj-colors.svg",
       "responsibility": [
         "Designer, Developer",
         "Coding main function"
@@ -60,7 +60,7 @@
       "duration": "Aug 2022 - Mar 2023",
       "position": "FullStack Developer",
       "size": 4,
-      "logo": "https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/prj-omron.jpg?raw=true",
+      "logo": "prj-omron.jpg",
       "responsibility": [
         "Developer",
         "Coding main function"
@@ -74,7 +74,7 @@
       "duration": "Mid-Jul 2021 - Feb 2022",
       "position": "Frontend Developer",
       "size": 32,
-      "logo": "https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/prj-omron.jpg?raw=true",
+      "logo": "prj-nta.png",
       "responsibility": [
         "Frontend Team Leader",
         "Build structure, coding main function",
@@ -89,7 +89,7 @@
       "duration": "Mid-Nov 2020 - Jun 2021",
       "position": "Frontend Developer",
       "size": 18,
-      "logo": "https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/prj-gomo.webp?raw=true",
+      "logo": "prj-gomo.webp",
       "responsibility": [
         "Develop",
         "Fix bugs and maintain."
@@ -103,7 +103,7 @@
       "duration": "Mid-Sep 2020 - Mid-Oct 2020",
       "position": "Develop",
       "size": 23,
-      "logo": "https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/prj-lg.jpeg?raw=true",
+      "logo": "prj-lg.jpeg",
       "responsibility": [
         "Develop and fix bugs",
         "Testing"
@@ -117,7 +117,7 @@
       "duration": "Sep 2019 - Mid-Sep 2020",
       "position": "Frontend Developer",
       "size": 24,
-      "logo": "https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/prj-dialog.png?raw=true",
+      "logo": "prj-dialog.png",
       "responsibility": [
         "Build Project Structure",
         "Coding main functions",
@@ -133,7 +133,7 @@
       "duration": "Mar 2018 - Aug 2019",
       "position": "Developer",
       "size": 12,
-      "logo": "https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/prj-ames.png?raw=true",
+      "logo": "prj-ames.png",
       "responsibility": [
         "Coding main functions Mobile and Web application",
         "Get requirement behavior from customer"

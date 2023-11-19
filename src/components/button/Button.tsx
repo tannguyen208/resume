@@ -8,7 +8,7 @@ const ButtonStyled = styled.a`
   padding: 0.25em 1em;
 
   cursor: pointer;
-  font-family: Virgil;
+  font-family: Aws-Regular;
 
   color: white;
   text-decoration: none;

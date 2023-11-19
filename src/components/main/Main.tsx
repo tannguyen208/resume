@@ -8,11 +8,14 @@ import ProfessionalProjects, {
 } from './ProfessionalProjects'
 import Education from './Education'
 import AwardsAndRecognitions from './AwardsAndRecognitions'
+import _assetProjects from '@assets/data/projects.json'
+import Header from '@components/header/Header'
 
 const MainStyled = styled.main`
-  padding: 1.5rem;
-  max-width: 950px;
   margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   .rs-info {
     margin: 0 auto;
@@ -35,7 +38,6 @@ const MainStyled = styled.main`
 
   .rs-project {
     margin: 12px;
-    box-shadow: 2px 8px 4px 0px #f0f0f0;
 
     & td {
       white-space: pre;
@@ -43,16 +45,20 @@ const MainStyled = styled.main`
 
     &--logo {
       width: 72px;
-      height: 72px;
-      border-radius: 50%;
+      max-height: 72px;
     }
   }
 
   footer {
+    padding: 1rem;
     margin-top: 1rem;
-    padding-top: 1rem;
-    border-top: 1px dashed #eee;
   }
+`
+
+const Body = styled.div`
+  display: flex;
+  flex-direction: column;
+  width: var(--container-width);
 `
 
 const API_URL =
@@ -66,14 +72,9 @@ export default function Main() {
   useEffect(() => {
     const fetchProjects = async () => {
       try {
-        const data =
-          import.meta.env.MODE === 'development'
-            ? (await import('@assets/projects.json')).default
-            : await (await fetch(API_URL)).json()
-
-        setOpenSource(data.open_source ?? [])
-        setProjects(data.projects ?? [])
-        setWorkExperience(data.company_experiences ?? [])
+        setOpenSource(_assetProjects.open_source ?? [])
+        setProjects(_assetProjects.projects ?? [])
+        setWorkExperience(_assetProjects.company_experiences ?? [])
       } catch (error) {
         console.error(error)
       }
@@ -84,11 +85,14 @@ export default function Main() {
 
   return (
     <MainStyled>
-      <Info />
-      <WorkExperience workExperience={workExperience} />
-      <ProfessionalProjects openSource={openSource} projects={projects} />
-      <Education />
-      <AwardsAndRecognitions />
+      <Header />
+      <Body>
+        <Info />
+        {/* <WorkExperience workExperience={workExperience} /> */}
+        <ProfessionalProjects openSource={openSource} projects={projects} />
+        <Education />
+        <AwardsAndRecognitions />
+      </Body>
       <footer>Made with ❤️ by TanNA</footer>
     </MainStyled>
   )
