@@ -1,7 +1,5 @@
-import { FaGithub, FaTwitter, FaLinkedin } from 'react-icons/fa'
 import Avatar from '@assets/avatar.png'
 import styled from 'styled-components'
-import Header from '@components/header/Header'
 
 const Container = styled.div`
   .hi {

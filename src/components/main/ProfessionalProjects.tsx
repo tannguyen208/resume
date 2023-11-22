@@ -1,31 +1,10 @@
 import { Fragment, memo } from 'react'
 import Card from '@components/card/Card'
+import { resume } from '@data/resume'
 
-export interface IProject {
-  name: string
-  desc: string
-  logo: string
-  duration: string
-  position: string
-  size: number
-  responsibility: string[]
-  technology: string
-  tool: string
-}
+type IProps = {}
 
-export interface IOpenSourceProject {
-  name: string
-  logo: string
-  link: string
-  sourceUrl: string
-}
-
-type IProps = {
-  openSource: IOpenSourceProject[]
-  projects: IProject[]
-}
-
-function ProfessionalProjects({ openSource, projects }: IProps) {
+function ProfessionalProjects(props: IProps) {
   const onLink = (link: string) => {
     window.open(link, '_blank')
   }
@@ -33,11 +12,11 @@ function ProfessionalProjects({ openSource, projects }: IProps) {
   return (
     <section>
       <p className="rs-title">Professional Projects</p>
-      {Boolean(openSource.length) && (
+      {Boolean(resume.value.openSources.length) && (
         <Fragment>
           <p>* Community Sharing Projects (Open Source)</p>
           <div className="flex flex-wrap">
-            {openSource.map((os) => (
+            {resume.value.openSources.map((os) => (
               <Card key={os.name} className="rs-project pointer">
                 <div className="flex" onClick={() => onLink(os.link)}>
                   <img
@@ -66,7 +45,7 @@ function ProfessionalProjects({ openSource, projects }: IProps) {
 
       <p>* Company Projects</p>
       <div className="flex flex-wrap">
-        {projects.map((project) => (
+        {resume.value.projects.map((project) => (
           <Card key={project.name} className="rs-project">
             <img
               className="rs-project--logo"

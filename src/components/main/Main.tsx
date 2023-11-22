@@ -1,15 +1,10 @@
-import { useEffect, useState } from 'react'
-import styled from 'styled-components'
-import Info from './Info'
-import WorkExperience, { IWorkExperience } from './WorkExperience'
-import ProfessionalProjects, {
-  IProject,
-  IOpenSourceProject,
-} from './ProfessionalProjects'
-import Education from './Education'
-import AwardsAndRecognitions from './AwardsAndRecognitions'
-import _assetProjects from '@assets/data/projects.json'
 import Header from '@components/header/Header'
+import styled from 'styled-components'
+import AwardsAndRecognitions from './AwardsAndRecognitions'
+import Education from './Education'
+import Info from './Info'
+import ProfessionalProjects from './ProfessionalProjects'
+import WorkExperience from './WorkExperience'
 
 const MainStyled = styled.main`
   margin: 0 auto;
@@ -61,35 +56,14 @@ const Body = styled.div`
   width: var(--container-width);
 `
 
-const API_URL =
-  'https://raw.githubusercontent.com/tannguyen208/resume/main/src/assets/projects.json'
-
 export default function Main() {
-  const [openSource, setOpenSource] = useState<IOpenSourceProject[]>([])
-  const [projects, setProjects] = useState<IProject[]>([])
-  const [workExperience, setWorkExperience] = useState<IWorkExperience[]>([])
-
-  useEffect(() => {
-    const fetchProjects = async () => {
-      try {
-        setOpenSource(_assetProjects.open_source ?? [])
-        setProjects(_assetProjects.projects ?? [])
-        setWorkExperience(_assetProjects.company_experiences ?? [])
-      } catch (error) {
-        console.error(error)
-      }
-    }
-
-    fetchProjects()
-  }, [])
-
   return (
     <MainStyled>
       <Header />
       <Body>
         <Info />
-        {/* <WorkExperience workExperience={workExperience} /> */}
-        <ProfessionalProjects openSource={openSource} projects={projects} />
+        <WorkExperience />
+        <ProfessionalProjects />
         <Education />
         <AwardsAndRecognitions />
       </Body>

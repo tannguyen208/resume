@@ -1,17 +1,10 @@
 import Card from '@components/card/Card'
 import { memo } from 'react'
+import { resume } from '@data/resume'
 
-export interface IWorkExperience {
-  name: string
-  time: string
-  roles: string[]
-}
+type IProps = {}
 
-type IProps = {
-  workExperience: IWorkExperience[]
-}
-
-function WorkExperience({ workExperience }: IProps) {
+function WorkExperience(props: IProps) {
   return (
     <section className="rs-content">
       <p className="rs-title">Work Experience</p>
@@ -38,7 +31,7 @@ function WorkExperience({ workExperience }: IProps) {
         </li>
       </ul>
       <div className="flex flex-wrap" style={{ gap: 8 }}>
-        {workExperience.map((we) => (
+        {resume.value.experiences.map((we) => (
           <Card key={we.name}>
             <div>
               <p>
