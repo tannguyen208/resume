@@ -1,10 +1,9 @@
 import { useScroll, useSpring } from 'framer-motion'
 import { Fragment } from 'react'
 import { ThemeProvider } from 'styled-components'
-import Main from './components/main/Main'
+import { Resume } from './components/Resume'
 import theme from './theme'
 import GlobalStyle from './theme/globalStyles'
-// import Background from './components/background/Background'
 
 function App() {
   const { scrollYProgress } = useScroll()
@@ -18,8 +17,14 @@ function App() {
     <Fragment>
       <GlobalStyle />
       <ThemeProvider theme={theme}>
-        <Main />
-        {/* <Background /> */}
+        <Resume />
+        {/* Progress bar */}
+        <div className="fixed top-0 left-0 right-0 h-1 bg-gray-200 z-50">
+          <div 
+            className="h-full bg-gradient-to-r from-blue-500 to-purple-500 transition-transform duration-300 ease-out"
+            style={{ transform: `scaleX(${scaleX})`, transformOrigin: 'left' }}
+          />
+        </div>
       </ThemeProvider>
     </Fragment>
   )
