@@ -10,7 +10,7 @@ export const Skills: React.FC<SkillsProps> = ({ data }) => {
     <section className="py-8">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
         <span className="mr-3">🛠️</span>
-        Kỹ năng
+        Skills
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {data.map((skill, index) => (

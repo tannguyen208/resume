@@ -10,7 +10,7 @@ export const Experience: React.FC<ExperienceProps> = ({ data }) => {
     <section className="py-8">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
         <span className="mr-3">💼</span>
-        Kinh nghiệm làm việc
+        Work Experience
       </h2>
       <div className="space-y-6">
         {data.map((exp, index) => (

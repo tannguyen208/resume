@@ -1,0 +1,76 @@
+@page {
+  size: A4;
+  margin: 14mm 16mm;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.34;
+  color: #1b1b1b;
+  margin: 0;
+}
+
+/* Name */
+h1 {
+  font-size: 21pt;
+  font-weight: 700;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin: 0 0 3pt;
+}
+
+/* Contact line (paragraph immediately after the name) */
+h1 + p {
+  text-align: center;
+  font-size: 9.5pt;
+  color: #444;
+  margin: 0 0 10pt;
+}
+
+/* Section headings */
+h2 {
+  font-size: 11.5pt;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border-bottom: 1.2px solid #333;
+  padding-bottom: 2pt;
+  margin: 13pt 0 6pt;
+}
+
+/* Entry titles (job / project / degree) */
+h3 {
+  font-size: 10.8pt;
+  font-weight: 700;
+  margin: 8pt 0 0;
+}
+
+/* Meta line (location · dates) directly after an entry title */
+h3 + p {
+  font-size: 9.5pt;
+  font-style: italic;
+  color: #555;
+  margin: 1pt 0 3pt;
+}
+
+ul {
+  margin: 3pt 0 6pt;
+  padding-left: 16pt;
+}
+
+li {
+  margin: 0 0 2pt;
+}
+
+p { margin: 4pt 0; }
+
+a { color: #1b1b1b; text-decoration: none; }
+
+strong { font-weight: 700; }
+
+/* Avoid breaking an entry across pages where possible */
+h3 { break-after: avoid; }
+h2 { break-after: avoid; }

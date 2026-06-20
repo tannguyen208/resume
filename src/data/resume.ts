@@ -40,102 +40,146 @@ export interface ResumeData {
 
 export const resumeData: ResumeData = {
   personalInfo: {
-    name: "Nguyễn Văn A",
-    title: "Full Stack Developer",
-    email: "nguyenvana@email.com",
-    phone: "+84 123 456 789",
-    location: "Hồ Chí Minh, Việt Nam",
+    name: "Nguyen Anh Tan",
+    title: "Senior Frontend Engineer",
+    email: "tanna48pct@gmail.com",
+    phone: "+84 357833112",
+    location: "Ho Chi Minh City, Vietnam",
     avatar: "/src/assets/avatar.png",
-    summary: "Full Stack Developer với 3+ năm kinh nghiệm phát triển web applications. Chuyên về React, Node.js và cloud technologies. Đam mê tạo ra những sản phẩm chất lượng cao và user-friendly."
+    summary:
+      "Senior Frontend Engineer (~8 yrs) specializing in React/TypeScript and scalable UI architecture, with backend experience across Node.js and REST APIs. Ships polished, accessible products and works effectively across the full stack."
   },
   experience: [
     {
-      company: "Tech Company ABC",
-      position: "Senior Frontend Developer",
-      duration: "2022 - Hiện tại",
+      company: "Vitalify Asia",
+      position: "Software Engineer",
+      duration: "Oct 2022 – Present",
       description: [
-        "Phát triển và maintain React applications cho 50,000+ users",
-        "Tối ưu hóa performance, giảm loading time 40%",
-        "Mentor junior developers và review code",
-        "Implement CI/CD pipeline và automated testing"
+        "Built and shipped 4 web applications using ReactJS, Vue.js, and Next.js within agile teams of 3–6 engineers, with 2 becoming the company's most successful client products.",
+        "Integrated LLM-powered features, including conversational chatbots, into client products while owning the frontend architecture and reusable component libraries.",
+        "Designed an internal AI agent and automation framework — reusable \"skills\" and workflows (plan, design system, code, review, deploy, ship) using Claude and Codex to accelerate delivery across projects.",
+        "Designed and integrated REST APIs and backend services with Node.js / NestJS and PostgreSQL, delivering features end to end across the stack."
       ],
-      technologies: ["React", "TypeScript", "Next.js", "Tailwind CSS", "Jest", "Docker"]
+      technologies: ["ReactJS", "Vue.js", "Next.js", "TypeScript", "Node.js", "NestJS", "PostgreSQL"]
     },
     {
-      company: "Startup XYZ",
-      position: "Full Stack Developer",
-      duration: "2021 - 2022",
+      company: "FPT Software",
+      position: "Software Engineer (Frontend Team Lead)",
+      duration: "Aug 2021 – Jan 2022",
       description: [
-        "Xây dựng MVP từ đầu với React và Node.js",
-        "Thiết kế và implement RESTful APIs",
-        "Setup database và deploy lên AWS",
-        "Làm việc với team 5 người trong môi trường Agile"
+        "Led a cross-functional team of 7 engineers building web applications for enterprise clients, with a React front end and a .NET backend.",
+        "Drove front-end architecture, code reviews, and technical decisions, ensuring consistent quality and on-time delivery.",
+        "Integrated React front ends with .NET REST APIs and mentored teammates on React best practices."
       ],
-      technologies: ["React", "Node.js", "Express", "MongoDB", "AWS", "Git"]
+      technologies: ["React", "Redux", ".NET", "REST APIs"]
     },
     {
-      company: "Digital Agency",
-      position: "Frontend Developer",
-      duration: "2020 - 2021",
+      company: "Sutrix Solutions",
+      position: "Software Developer",
+      duration: "Jan 2021 – Apr 2021",
       description: [
-        "Phát triển responsive websites cho clients",
-        "Convert PSD designs thành HTML/CSS/JS",
-        "Tối ưu SEO và performance",
-        "Support và maintain existing projects"
+        "Developed web features with React and built a cross-platform mobile app with Flutter, delivering responsive UIs to client specifications."
       ],
-      technologies: ["HTML5", "CSS3", "JavaScript", "jQuery", "Bootstrap", "WordPress"]
+      technologies: ["React", "Flutter"]
+    },
+    {
+      company: "FPT Software",
+      position: "Software Engineer",
+      duration: "Sep 2019 – Oct 2020",
+      description: [
+        "Developed and maintained web application features for outsourced enterprise projects using Angular, contributing across the full development lifecycle.",
+        "Built responsive UIs and integrated REST APIs, collaborating with QA to diagnose and resolve defects."
+      ],
+      technologies: ["Angular", "OpenLayers", "REST APIs"]
+    },
+    {
+      company: "Softech",
+      position: "Software Developer",
+      duration: "Jul 2018 – Mar 2019",
+      description: [
+        "Built web and mobile features using React and React Native as part of the development team, gaining hands-on experience across the full development cycle.",
+        "Implemented responsive interfaces and resolved bugs to improve application stability and usability."
+      ],
+      technologies: ["React", "React Native"]
     }
   ],
   education: [
     {
-      school: "Đại học Bách Khoa TP.HCM",
-      degree: "Cử nhân Công nghệ Thông tin",
-      year: "2016 - 2020",
-      gpa: "3.5/4.0"
+      school: "Aptech Computer Education (Softech Aptech)",
+      degree: "Diploma in Software Engineering",
+      year: "2016 – 2018"
     }
   ],
   skills: [
     {
+      category: "Languages",
+      items: ["TypeScript", "JavaScript", "PHP", "C#", "Dart", "HTML/CSS", "SQL"]
+    },
+    {
       category: "Frontend",
-      items: ["React", "TypeScript", "Next.js", "Vue.js", "HTML5", "CSS3", "Tailwind CSS", "Sass"]
+      items: ["React", "Next.js", "Redux", "React Query", "Tailwind CSS", "styled-components", "OpenLayers", "Vue", "Angular"]
+    },
+    {
+      category: "Mobile",
+      items: ["React Native", "Flutter"]
     },
     {
       category: "Backend",
-      items: ["Node.js", "Express", "Python", "Django", "RESTful APIs", "GraphQL"]
+      items: ["Node.js", "NestJS", "Express", "REST APIs", "GraphQL", ".NET", "PHP / WordPress"]
     },
     {
       category: "Database",
-      items: ["MongoDB", "PostgreSQL", "MySQL", "Redis", "Firebase"]
+      items: ["PostgreSQL", "MySQL", "SQL Server", "MongoDB", "Firebase"]
     },
     {
-      category: "Tools & Others",
-      items: ["Git", "Docker", "AWS", "Vercel", "Jest", "Cypress", "Figma"]
+      category: "Cloud & DevOps",
+      items: ["AWS", "Docker", "CI/CD"]
+    },
+    {
+      category: "Tools",
+      items: ["Git", "Jest", "Vite / Webpack", "Figma"]
     }
   ],
   projects: [
     {
-      name: "E-commerce Platform",
-      description: "Full-stack e-commerce platform với React, Node.js và MongoDB. Hỗ trợ payment gateway, inventory management và admin dashboard.",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe", "AWS"],
-      link: "https://ecommerce-demo.com",
-      github: "https://github.com/username/ecommerce"
+      name: "Colors",
+      description:
+        "Web app that generates family trees from PDF documents. As full-stack developer in a 5-person team, contributed to UI design and built core features with Vue and NestJS.",
+      technologies: ["Vue", "NestJS", "AWS"]
     },
     {
-      name: "Task Management App",
-      description: "Real-time task management application với drag & drop, team collaboration và notifications.",
-      technologies: ["React", "Socket.io", "Express", "PostgreSQL"],
-      github: "https://github.com/username/taskmanager"
+      name: "OMRON Pressure",
+      description:
+        "Full-stack development of a blood pressure measurement app within a 4-person team, implementing core features end to end with ReactJS and PHP.",
+      technologies: ["ReactJS", "PHP", "AWS"]
     },
     {
-      name: "Weather Dashboard",
-      description: "Responsive weather dashboard với location-based forecasts và interactive charts.",
-      technologies: ["Vue.js", "Chart.js", "OpenWeather API", "PWA"],
-      link: "https://weather-dashboard.netlify.app"
+      name: "NTA UniNext",
+      description:
+        "Tour-management platform for a third-party travel client (32-person project). As Frontend Team Leader, led a 7-person frontend team, defined the front-end architecture, implemented core features, and owned code reviews — integrating Navitime mapping APIs and MapScript.",
+      technologies: ["ReactJS", "Redux", "Navitime API", "MapScript"]
+    },
+    {
+      name: "Gomo PH",
+      description:
+        "Cross-platform mobile app for purchasing 5G SIMs with international connectivity. Built the Flutter (Dart) client.",
+      technologies: ["Flutter", "Dart"]
+    },
+    {
+      name: "Dialog ORION",
+      description:
+        "Real-time web app for tracking workers' locations and pushing danger-alert notifications. Built the Angular + OpenLayers front end, rendering real-time location data streamed from ~3,000 beacons per second.",
+      technologies: ["Angular", "OpenLayers", ".NET"]
+    },
+    {
+      name: "Ames English",
+      description:
+        "Mobile app for an English-learning platform for students and teachers, with guided practice across all four skills — listening, speaking, reading, and writing. Developed the React Native client in a 4-person team.",
+      technologies: ["React Native", ".NET"]
     }
   ],
   languages: [
-    { language: "Tiếng Việt", level: "Bản ngữ" },
-    { language: "English", level: "Trung cấp" },
-    { language: "日本語", level: "Sơ cấp" }
+    { language: "Vietnamese", level: "Native" },
+    { language: "English", level: "Professional working" }
   ]
 };

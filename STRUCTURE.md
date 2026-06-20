@@ -1,34 +1,34 @@
-# 🎯 Cấu trúc App đã được tối ưu
+# 🎯 Optimized App Structure
 
-## ✅ Những gì đã làm
+## ✅ What was done
 
-### 🗂️ Cấu trúc mới (đơn giản hơn)
-- **`lib/`** - Thư viện chính (config, api)
+### 🗂️ New structure (simpler)
+- **`lib/`** - Core library (config, api)
 - **`hooks/`** - Custom hooks (useAuth)
 - **`types/`** - TypeScript types
 - **`utils/`** - Utilities (validation, formatting, UI)
-- **`pages/`** - Các trang
-- **`components/ui/`** - UI components tái sử dụng
+- **`pages/`** - Pages
+- **`components/ui/`** - Reusable UI components
 
-### 🚀 Tính năng mới
-- **API Client** đơn giản
-- **Auth Hook** với localStorage
+### 🚀 New features
+- Simple **API Client**
+- **Auth Hook** with localStorage
 - **Validation** utilities
 - **UI Components** (Button, Card, Loading, Error)
-- **TypeScript** types đầy đủ
+- Full **TypeScript** types
 
-### 📦 Import đơn giản
+### 📦 Simpler imports
 ```typescript
-// Thay vì import dài
+// Instead of long imports
 import { config, api } from './lib';
 import { useAuth } from './hooks';
 import { Button, Card } from './components/ui';
 import { formatDate, isValidEmail } from './utils';
 ```
 
-## 🎉 Kết quả
-- **Giảm 70%** số thư mục phức tạp
-- **Tăng 100%** khả năng tái sử dụng
-- **Dễ hiểu** và bảo trì hơn
-- **TypeScript** đầy đủ
-- **Sẵn sàng** để phát triển thêm
+## 🎉 Result
+- **70% fewer** complex folders
+- **100% more** reusability
+- **Easier** to understand and maintain
+- Full **TypeScript**
+- **Ready** for further development

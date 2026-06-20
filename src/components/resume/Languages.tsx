@@ -10,7 +10,7 @@ export const Languages: React.FC<LanguagesProps> = ({ data }) => {
     <section className="py-8">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
         <span className="mr-3">🌍</span>
-        Ngôn ngữ
+        Languages
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {data.map((lang, index) => (

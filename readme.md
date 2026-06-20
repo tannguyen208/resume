@@ -1,33 +1,33 @@
 # 📄 Resume Portfolio App
 
-Một ứng dụng Resume Portfolio đẹp mắt và responsive được xây dựng với React + TypeScript.
+A beautiful, responsive resume portfolio app built with React + TypeScript.
 
-## ✨ Tính năng
+## ✨ Features
 
-- **Responsive Design** - Tối ưu cho mọi thiết bị
-- **Modern UI** - Giao diện đẹp với Tailwind CSS
-- **TypeScript** - Type safety đầy đủ
-- **Component-based** - Dễ bảo trì và mở rộng
-- **Progress Bar** - Hiển thị tiến độ scroll
-- **Interactive Elements** - Hover effects và animations
+- **Responsive Design** - Optimized for every device
+- **Modern UI** - Polished interface with Tailwind CSS
+- **TypeScript** - Full type safety
+- **Component-based** - Easy to maintain and extend
+- **Progress Bar** - Shows scroll progress
+- **Interactive Elements** - Hover effects and animations
 
-## 🎨 Giao diện
+## 🎨 Interface
 
-- **Header** - Thông tin cá nhân với avatar và contact
-- **Experience** - Kinh nghiệm làm việc chi tiết
-- **Skills** - Kỹ năng được phân loại
-- **Projects** - Dự án nổi bật với links
-- **Education** - Thông tin học vấn
-- **Languages** - Ngôn ngữ và trình độ
+- **Header** - Personal info with avatar and contact
+- **Experience** - Detailed work experience
+- **Skills** - Categorized skills
+- **Projects** - Featured projects with links
+- **Education** - Education details
+- **Languages** - Languages and proficiency
 
-## 🚀 Cách sử dụng
+## 🚀 Usage
 
-1. **Chỉnh sửa dữ liệu** trong `src/data/resume.ts`
-2. **Thay đổi avatar** trong `src/assets/avatar.png`
-3. **Customize styling** với Tailwind CSS
-4. **Deploy** lên Vercel/Netlify
+1. **Edit the data** in `src/data/resume.ts`
+2. **Change the avatar** in `src/assets/avatar.png`
+3. **Customize the styling** with Tailwind CSS
+4. **Deploy** to Vercel/Netlify
 
-## 📁 Cấu trúc (Đã tối ưu)
+## 📁 Structure (Optimized)
 
 ```
 src/
@@ -36,18 +36,18 @@ src/
 │   └── Resume.tsx       # Main resume component
 ├── data/
 │   └── resume.ts        # Resume data
-├── assets/              # Images và assets
+├── assets/              # Images and assets
 └── theme/               # Styling theme
 ```
 
 ## 🎯 Sample Data
 
-App đã có sẵn dữ liệu mẫu cho:
+The app ships with sample data for:
 - Full Stack Developer
-- 3+ năm kinh nghiệm
+- 3+ years of experience
 - React, Node.js, TypeScript
-- Các dự án thực tế
-- Skills đầy đủ
+- Real-world projects
+- A complete set of skills
 
 ## 🛠️ Tech Stack
 
@@ -60,16 +60,16 @@ App đã có sẵn dữ liệu mẫu cho:
 ## 📱 Responsive
 
 - ✅ Desktop (1200px+)
-- ✅ Tablet (768px - 1199px)  
+- ✅ Tablet (768px - 1199px)
 - ✅ Mobile (320px - 767px)
 
 ## 🎨 Customization
 
-Dễ dàng thay đổi:
-- Colors trong Tailwind config
-- Layout trong components
-- Data trong resume.ts
-- Styling với CSS classes
+Easily change:
+- Colors in the Tailwind config
+- Layout in the components
+- Data in resume.ts
+- Styling with CSS classes
 
 ---
 

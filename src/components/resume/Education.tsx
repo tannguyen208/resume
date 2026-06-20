@@ -10,7 +10,7 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
     <section className="py-8">
       <h2 className="text-2xl font-bold text-gray-800 mb-6 flex items-center">
         <span className="mr-3">🎓</span>
-        Học vấn
+        Education
       </h2>
       <div className="space-y-4">
         {data.map((edu, index) => (
