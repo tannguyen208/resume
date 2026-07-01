@@ -46,7 +46,7 @@ const ProjectCard = ({ project, index, total }: ProjectCardProps) => {
   return (
     <div
       ref={container}
-      className="sticky top-24 md:top-32 flex h-[85vh] items-start justify-center"
+      className="sticky top-24 md:top-32 flex min-h-[85vh] items-start justify-center"
     >
       <motion.div
         style={{ scale, top: `${index * 28}px` }}
@@ -55,7 +55,7 @@ const ProjectCard = ({ project, index, total }: ProjectCardProps) => {
         {/* Top row: number / category / name */}
         <div className="mb-3 flex items-start gap-3 sm:mb-5 sm:gap-6">
           <span
-            className="font-black leading-none text-[#D7E2EA]"
+            className="font-display font-black leading-none text-[#D7E2EA]"
             style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}
           >
             {project.num}

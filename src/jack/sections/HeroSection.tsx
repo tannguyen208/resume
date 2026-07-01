@@ -1,6 +1,7 @@
 import { FadeIn } from '../components/FadeIn'
 import { Magnet } from '../components/Magnet'
 import { ContactButton } from '../components/ContactButton'
+import { DownloadCV } from '../components/DownloadCV'
 import { NAV_LINKS, PERSON } from '../data'
 
 export const HeroSection = () => (
@@ -47,7 +48,10 @@ export const HeroSection = () => (
         </FadeIn>
 
         <FadeIn delay={0.5} y={20}>
-          <ContactButton href={`mailto:${PERSON.email}`} />
+          <div className="flex flex-col items-end gap-3 sm:flex-row sm:items-center">
+            <DownloadCV menuPlacement="top" />
+            <ContactButton href={`mailto:${PERSON.email}`} />
+          </div>
         </FadeIn>
       </div>
     </div>
@@ -62,11 +66,23 @@ export const HeroSection = () => (
           activeTransition="transform 0.3s ease-out"
           inactiveTransition="transform 0.6s ease-in-out"
         >
-          <img
-            src={PERSON.portrait}
-            alt={PERSON.fullName}
-            className="w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px] rounded-[32px] sm:rounded-[44px] object-cover"
-          />
+          <div className="relative">
+            {/* Soft halo lifts the cut-out figure off the display type behind it. */}
+            <div
+              aria-hidden
+              className="absolute left-1/2 top-1/2 -z-10 h-[115%] w-[115%] -translate-x-1/2 -translate-y-1/2 rounded-full"
+              style={{
+                background:
+                  'radial-gradient(closest-side, rgba(12,12,12,0.92), rgba(12,12,12,0.6) 55%, transparent 78%)',
+              }}
+            />
+            <img
+              src={PERSON.portrait}
+              alt={PERSON.fullName}
+              className="w-[280px] sm:w-[360px] md:w-[440px] lg:w-[520px] object-contain"
+              style={{ filter: 'drop-shadow(0 26px 50px rgba(0,0,0,0.55))' }}
+            />
+          </div>
         </Magnet>
       </FadeIn>
     </div>

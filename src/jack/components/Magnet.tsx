@@ -1,3 +1,4 @@
+import { useReducedMotion } from 'framer-motion'
 import { useEffect, useRef, useState } from 'react'
 import type { ReactNode } from 'react'
 
@@ -21,10 +22,12 @@ export const Magnet = ({
   className,
 }: MagnetProps) => {
   const ref = useRef<HTMLDivElement>(null)
+  const reduce = useReducedMotion()
   const [pos, setPos] = useState({ x: 0, y: 0 })
   const [active, setActive] = useState(false)
 
   useEffect(() => {
+    if (reduce) return
     const handleMove = (e: MouseEvent) => {
       const el = ref.current
       if (!el) return
@@ -46,7 +49,7 @@ export const Magnet = ({
     }
     window.addEventListener('mousemove', handleMove)
     return () => window.removeEventListener('mousemove', handleMove)
-  }, [padding, strength])
+  }, [padding, strength, reduce])
 
   return (
     <div

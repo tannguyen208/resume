@@ -53,19 +53,20 @@ export const resumeData: ResumeData = {
     {
       company: "Vitalify Asia",
       position: "Software Engineer",
-      duration: "Oct 2022 – Present",
+      duration: "Aug 2022 – Present",
       description: [
         "Built and shipped 4 web applications using ReactJS, Vue.js, and Next.js within agile teams of 3–6 engineers, with 2 becoming the company's most successful client products.",
         "Integrated LLM-powered features, including conversational chatbots, into client products while owning the frontend architecture and reusable component libraries.",
         "Designed an internal AI agent and automation framework — reusable \"skills\" and workflows (plan, design system, code, review, deploy, ship) using Claude and Codex to accelerate delivery across projects.",
-        "Designed and integrated REST APIs and backend services with Node.js / NestJS and PostgreSQL, delivering features end to end across the stack."
+        "Designed and integrated REST APIs and backend services with Node.js / NestJS and PostgreSQL, delivering features end to end across the stack.",
+        "Recognized as Best Performance Member for consistent high-impact delivery across client products."
       ],
       technologies: ["ReactJS", "Vue.js", "Next.js", "TypeScript", "Node.js", "NestJS", "PostgreSQL"]
     },
     {
       company: "FPT Software",
       position: "Software Engineer (Frontend Team Lead)",
-      duration: "Aug 2021 – Jan 2022",
+      duration: "Aug 2021 – Feb 2022",
       description: [
         "Led a cross-functional team of 7 engineers building web applications for enterprise clients, with a React front end and a .NET backend.",
         "Drove front-end architecture, code reviews, and technical decisions, ensuring consistent quality and on-time delivery.",
@@ -76,7 +77,7 @@ export const resumeData: ResumeData = {
     {
       company: "Sutrix Solutions",
       position: "Software Developer",
-      duration: "Jan 2021 – Apr 2021",
+      duration: "Oct 2020 – Jul 2021",
       description: [
         "Developed web features with React and built a cross-platform mobile app with Flutter, delivering responsive UIs to client specifications."
       ],
@@ -88,14 +89,15 @@ export const resumeData: ResumeData = {
       duration: "Sep 2019 – Oct 2020",
       description: [
         "Developed and maintained web application features for outsourced enterprise projects using Angular, contributing across the full development lifecycle.",
-        "Built responsive UIs and integrated REST APIs, collaborating with QA to diagnose and resolve defects."
+        "Built responsive UIs and integrated REST APIs, collaborating with QA to diagnose and resolve defects.",
+        "Recognized as Best Performance Member for outstanding technical delivery and frontend-team support."
       ],
       technologies: ["Angular", "OpenLayers", "REST APIs"]
     },
     {
       company: "Softech",
       position: "Software Developer",
-      duration: "Jul 2018 – Mar 2019",
+      duration: "Mar 2018 – Aug 2019",
       description: [
         "Built web and mobile features using React and React Native as part of the development team, gaining hands-on experience across the full development cycle.",
         "Implemented responsive interfaces and resolved bugs to improve application stability and usability."
@@ -118,6 +120,14 @@ export const resumeData: ResumeData = {
     {
       category: "Frontend",
       items: ["React", "Next.js", "Redux", "React Query", "Tailwind CSS", "styled-components", "OpenLayers", "Vue", "Angular"]
+    },
+    {
+      category: "Testing & Quality",
+      items: ["Jest", "React Testing Library", "Cypress", "Playwright", "TDD", "CI coverage gating"]
+    },
+    {
+      category: "Performance",
+      items: ["Core Web Vitals", "Lighthouse", "Code-splitting", "Lazy-loading", "Bundle analysis", "Memoization"]
     },
     {
       category: "Mobile",
@@ -176,6 +186,14 @@ export const resumeData: ResumeData = {
       description:
         "Mobile app for an English-learning platform for students and teachers, with guided practice across all four skills — listening, speaking, reading, and writing. Developed the React Native client in a 4-person team.",
       technologies: ["React Native", ".NET"]
+    },
+    {
+      name: "AI ChatPad",
+      description:
+        "Open-source ChatGPT-style chat UI with streaming responses, built in React and TypeScript.",
+      technologies: ["React", "TypeScript"],
+      link: "https://tannguyen208.github.io/chatgpt/",
+      github: "https://github.com/tannguyen208/chatgpt"
     }
   ],
   languages: [

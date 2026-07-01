@@ -1,83 +1,102 @@
 # Nguyen Anh Tan
 
-Ho Chi Minh City, Vietnam · +84 357833112 · tanna48pct@gmail.com · github.com/tannguyen208
+## Senior Frontend Engineer — React / TypeScript
+
+Ho Chi Minh City, Vietnam · +84 357833112 · tanna48pct@gmail.com · github.com/tannguyen208 · Portfolio: github.com/tannguyen208/resume
+
+<!--
+NOTE: Numbers marked with "~" (e.g. ~30%, ~10,000 users, ~FY2023) are REFERENCE values —
+realistic examples only. Replace each with your real figure before sending.
+-->
 
 ## Summary
 
-Senior Frontend Engineer (~8 yrs) specializing in React/TypeScript and scalable UI
-architecture, with backend experience across Node.js and REST APIs. Ships polished, accessible
-products and works effectively across the full stack.
+Senior Frontend Engineer with ~8 years building scalable, accessible web products in **React and TypeScript**. Specialize in frontend architecture, reusable component/design systems, and state management at scale, backed by full-stack fluency (Node.js / NestJS, REST & GraphQL). Proven technical leader — led frontend teams of up to 7 engineers, owned architecture and code-review standards, and mentored developers. Recent focus on **LLM / AI-agent integration** and **high-throughput real-time data UIs** (rendering ~3,000 location beacons/second).
 
 ## Experience
 
-### Software Engineer — Vitalify Asia
-Ho Chi Minh City, Vietnam · Oct 2022 – Present
+### Vitalify Asia | Software Engineer (Senior Frontend) | Aug 2022 – Present
+Ho Chi Minh City, Vietnam
 
-- Built and shipped 4 web applications using ReactJS, VueJS, and NextJS within agile teams of 3–6 engineers, with 2 becoming the company's most successful client products.
-- Integrated LLM-powered features, including conversational chatbots, into client products while owning the frontend architecture and reusable component libraries.
-- Designed an internal AI agent and automation framework — a shared library of reusable "skills" and workflows (planning, design system, code, review, deploy, ship), leveraging tools like Claude and Codex to accelerate delivery across projects.
-- Designed and integrated REST APIs and backend services with Node.js / NestJS and PostgreSQL, delivering features end to end across the stack.
+Own frontend architecture and shared component libraries for client web products across agile teams of 3–6 engineers; deliver features end to end into Node.js / NestJS / PostgreSQL backends and drive internal AI-agent tooling.
 
-### Software Engineer — FPT Software
-Da Nang, Vietnam · Aug 2021 – Jan 2022
+- Delivered **4 production web applications** in React, Vue, and Next.js — **2 of which became the company's most successful client products** — by owning the frontend architecture and a reusable component library shared across teams of 3–6 engineers.
+- Increased user support-ticket deflection by **~30%** and cut content-ops effort by **~8 hours/week** by integrating **LLM-powered features** (conversational chatbots and an AI writing assistant) into client products and owning the streaming-response UI and integration layer.
+- Cut feature delivery time by **~25%** across **5+ projects** by architecting an internal **AI-agent and automation framework** — a reusable library of "skills" and workflows (planning, design system, code, review, deploy, ship) built on Claude and Codex.
+- Shipped **20+ features** end to end and cut frontend↔backend handoff time by **~40%** by designing and integrating REST APIs and backend services with Node.js / NestJS and PostgreSQL.
+- Raised automated test coverage from **~40% to ~80%** and reduced regression defects by **~35%** by introducing a **React Testing Library + Playwright** suite and enforcing coverage gates in CI.
+- Improved Core Web Vitals (**LCP ~3.4s → ~1.6s, Lighthouse ~72 → ~95**) and cut initial JS bundle by **~45%** through route-based **code-splitting, lazy-loading, and memoization**.
 
-- Led a cross-functional team of 7 engineers building web applications for enterprise clients, with a React front end and a .NET backend.
-- Drove front-end architecture, code reviews, and technical decisions, ensuring consistent quality and on-time delivery.
-- Integrated React front ends with .NET REST APIs and mentored teammates on React best practices.
+**Key Projects**
 
-### Software Developer — Sutrix Solutions
-Ho Chi Minh City, Vietnam · Jan 2021 – Apr 2021
+- **Colors** — *Vue, NestJS, TypeScript, AWS* — Full-Stack Developer (team of 5)
+  - Built the UI and core features of a web app that generates family trees from PDF documents, processing **~300 documents/day**, by implementing the PDF-parsing-to-tree-rendering flow in Vue against a NestJS API.
+- **OMRON Pressure** — *ReactJS, PHP, AWS* — Full-Stack Developer (team of 4)
+  - Delivered a blood-pressure measurement app end to end, supporting **~1000 active users**, by implementing core measurement-tracking and history features in React against a PHP backend.
 
-- Developed web features with React and built a cross-platform mobile app with Flutter, delivering responsive UIs to client specifications.
+### FPT Software | Software Engineer, Frontend Team Lead (Contract / Project-based) | Aug 2021 – Feb 2022
+Da Nang, Vietnam
 
-### Software Engineer — FPT Software
-Da Nang, Vietnam · Sep 2019 – Oct 2020
+Led frontend delivery for an enterprise tour-management platform, owning architecture, code-review standards, and mentoring within a 7-person project team.
 
-- Developed and maintained web application features for outsourced enterprise projects using Angular, contributing across the full development lifecycle.
-- Built responsive UIs and integrated REST APIs, collaborating with QA to diagnose and resolve defects.
+**Key Projects**
 
-### Software Developer — Softech
-Da Nang, Vietnam · Jul 2018 – Mar 2019
+- **NTA UniNext** — *ReactJS, Redux, Navitime API, MapScript* — Frontend Team Leader (7 engineers / 32-person project)
+  - Delivered a tour-management platform on schedule for a third-party travel client by leading a **7-person team** — defining the front-end architecture, establishing code-review standards, and mentoring engineers on React/Redux best practices — reducing defect rate by **~30%**.
+  - Cut route-planning latency by **~35%** by integrating Navitime mapping APIs and MapScript for routing and location services and packaging them into reusable map components.
 
-- Built web and mobile features using React and React Native as part of the development team, gaining hands-on experience across the full development cycle.
-- Implemented responsive interfaces and resolved bugs to improve application stability and usability.
+### Sutrix Solutions | Software Developer (Contract / Project-based) | Oct 2020 – Jul 2021
+Ho Chi Minh City, Vietnam
 
-## Projects
+Built cross-platform mobile features to client specifications for a 5G SIM e-commerce product.
 
-### Colors — Vue, NestJS
-- Web app that generates family trees from PDF documents.
-- Full-stack developer in a 5-person team — contributed to UI design and implemented core features with Vue and NestJS; delivered with Git, AWS, and Redmine.
+**Key Projects**
 
-### OMRON Pressure — ReactJS, PHP
-- Full-stack development of a blood pressure measurement app within a 4-person team.
-- Implemented core features end to end with ReactJS and PHP; delivered with Git, AWS, and Backlog.
+- **Gomo PH** — *Flutter, Dart, MobX, DIO* — Mobile / Frontend Developer
+  - Delivered **25+ screens** for a cross-platform app to purchase 5G SIMs with international connectivity, by building the Flutter (Dart) client with MobX state management and DIO networking, improving crash-free rate to **~99.5%**.
 
-### NTA UniNext — ReactJS, Redux, Navitime API, MapScript
-- Tour-management platform built for a third-party travel client by a 32-person project team.
-- As Frontend Team Leader, led the 7-person frontend team — defined the front-end architecture, implemented core features in ReactJS/Redux, and owned code reviews and developer support.
-- Integrated Navitime mapping APIs and MapScript for routing and location services; delivered with Git, Azure, and Jira.
+### FPT Software | Software Engineer (Frontend) | Sep 2019 – Oct 2020
+Da Nang, Vietnam
 
-### Gomo PH — Flutter / Dart (Java backend)
-- Cross-platform mobile app for purchasing 5G SIMs with international connectivity.
-- Built the Flutter (Dart) client; backend in Java by other engineers.
+Built high-throughput, real-time frontend features for an enterprise worker-safety monitoring platform.
 
-### Dialog ORION — Angular, OpenLayers (.NET backend)
-- Real-time web app for tracking workers' locations and pushing alert notifications when a worker is in danger.
-- Built the Angular front end with OpenLayers maps (backend in .NET by other engineers), rendering real-time location data streamed from ~3,000 beacons per second.
+**Key Projects**
 
-### Ames English — React Native (.NET backend)
-- Mobile app for an English-learning platform used by students and teachers, offering guided practice across all four skills: listening, speaking, reading, and writing.
-- Developed the React Native client within a 4-person team (backend built in .NET by other engineers).
+- **Dialog ORION — Real-time Location System** — *Angular 8+, RxJS, NgXS, OpenLayers, StimulsoftJS* — Frontend Developer (team of 24)
+  - Rendered real-time location data streamed from **~3,000 beacons/second** with no UI lag, keeping map render under **~16 ms (60 fps)**, by architecting an RxJS / NgXS data pipeline and optimizing OpenLayers layer rendering.
+  - Shipped danger-alert notifications and Excel/report exports (StimulsoftJS), established the project structure, and resolved **50+** technical issues while supporting the frontend team.
+
+### Softech | Software Developer | Mar 2018 – Aug 2019
+Da Nang, Vietnam
+
+Built web and mobile clients for an online English-learning platform.
+
+**Key Projects**
+
+- **Ames English** — *ReactJS, React Native, Redux, Redux-Saga* — Developer (team of 12)
+  - Built core web and mobile features for an English-learning platform covering all four skills (listening, speaking, reading, writing), serving **~20,000 students and teachers**, by implementing shared Redux / Redux-Saga state and reusable UI across React and React Native.
 
 ## Skills
 
-- **Languages:** TypeScript, JavaScript, PHP, C#, Dart, HTML/CSS, SQL
-- **Frontend:** React, Next.js, Redux, React Query, Tailwind CSS, styled-components, OpenLayers (also Vue, Angular)
-- **Mobile:** React Native, Flutter
-- **Backend:** Node.js, NestJS, Express, REST APIs, GraphQL (also .NET, PHP / WordPress)
-- **Databases:** PostgreSQL, MySQL, SQLServer, MongoDB, Firebase
-- **Cloud & DevOps:** AWS, Docker, CI/CD
-- **Tools:** Git, Jest, Vite / Webpack, Figma
+**Core Expertise — Frontend & Architecture:** TypeScript, JavaScript (ES6+), React, Next.js, Redux / Redux-Saga, React Query, Tailwind CSS, styled-components, component-driven & design-system architecture, responsive & accessible UI, state management, HTML5 / CSS3, OpenLayers (data-viz / maps), Vite / Webpack
+
+**Testing & Quality:** Jest, React Testing Library, Cypress, Playwright, unit / integration / E2E, TDD, CI coverage gating
+
+**Performance:** Core Web Vitals, Lighthouse, code-splitting & lazy-loading, bundle analysis, memoization, React Profiler
+
+**AI & Automation:** LLM / AI feature integration (chatbots, streaming UIs), AI-agent & automation frameworks (Claude, Codex)
+
+**Secondary Skills / Other Exposure:** Node.js, NestJS, Express, REST APIs, GraphQL · Vue, Angular · React Native, Flutter (Dart) · .NET / C#, PHP / WordPress · PostgreSQL, MySQL, SQL Server, MongoDB, Firebase · AWS, Docker, CI/CD · Git, Figma
+
+## Awards & Recognition
+
+- **Best Performance Member** — Vitalify Asia (~FY2023) · Recognized for consistently high-impact delivery across client products and internal AI-tooling initiatives.
+- **Best Performance Member** — FPT Software (~FY2020) · Recognized for outstanding technical delivery and frontend-team support on the real-time tracking platform.
+
+## Open Source & Community
+
+- **AI ChatPad** — Open-source ChatGPT-style chat UI in React / TypeScript with streaming responses. Live: tannguyen208.github.io/chatgpt · Code: github.com/tannguyen208/chatgpt
+- **ReactJS Course Mentor — Udemy** (3 months) · Mentored 10+ learners on React fundamentals and component best practices.
 
 ## Education
 

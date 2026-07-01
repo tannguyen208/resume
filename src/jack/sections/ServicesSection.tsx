@@ -7,7 +7,7 @@ export const ServicesSection = () => (
     className="bg-white rounded-t-[40px] sm:rounded-t-[50px] md:rounded-t-[60px] px-5 sm:px-8 md:px-10 py-20 sm:py-24 md:py-32"
   >
     <h2
-      className="text-center font-black uppercase text-[#0C0C0C] mb-16 sm:mb-20 md:mb-28"
+      className="font-display text-center font-black uppercase text-[#0C0C0C] mb-16 sm:mb-20 md:mb-28"
       style={{ fontSize: 'clamp(3rem, 12vw, 160px)' }}
     >
       Expertise
@@ -22,7 +22,7 @@ export const ServicesSection = () => (
           style={{ borderTop: '1px solid rgba(12, 12, 12, 0.15)' }}
         >
           <span
-            className="font-black leading-none text-[#0C0C0C]"
+            className="font-display font-black leading-none text-[#0C0C0C]"
             style={{ fontSize: 'clamp(3rem, 10vw, 140px)' }}
           >
             {item.num}

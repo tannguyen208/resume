@@ -2,6 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  /* Surface + ink */
+  --bg: #0c0c0c;
+  --ink: #d7e2ea;
+
+  /* One committed accent — magenta, the vivid heart of the old brand gradient.
+     White label text on --accent measures ~5.9:1 (clears WCAG AA). */
+  --accent: oklch(0.556 0.244 351);
+  --accent-hover: oklch(0.61 0.235 351);
+  --accent-glow: oklch(0.556 0.244 351 / 0.45);
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -11,18 +23,112 @@
 html,
 body,
 #root {
-  background: #0c0c0c;
-  font-family: 'Kanit', sans-serif;
+  background: var(--bg);
+  /* Body/UI face: humanist grotesque, paired against Kanit's geometric display. */
+  font-family: 'Hanken Grotesk', system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
 #root {
   min-height: 100vh;
 }
 
+/* Anchor jumps land below the fixed sticky nav, and glide unless the user
+   opts out of motion. */
+html {
+  scroll-padding-top: 4.5rem;
+}
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+/* Display face — the geometric brand voice for headings and big numerals. */
+.font-display {
+  font-family: 'Kanit', sans-serif;
+}
+
+/* Display headings: solid near-white ink. No gradient text — emphasis comes
+   from weight and scale, which is more confident at this size, not less. */
 .hero-heading {
-  background: linear-gradient(180deg, #646973 0%, #bbccd7 100%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  color: transparent;
+  font-family: 'Kanit', sans-serif;
+  color: var(--ink);
+  text-wrap: balance;
+}
+
+/* Primary CTA — solid accent pill. Rest state carries no decorative outline;
+   the outline is reserved for real keyboard focus. */
+.btn-accent {
+  background: var(--accent);
+  color: #fff;
+  box-shadow: 0 10px 30px -10px var(--accent-glow);
+  transition: background 0.2s ease, box-shadow 0.25s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+}
+.btn-accent:hover {
+  background: var(--accent-hover);
+  box-shadow: 0 16px 40px -12px var(--accent-glow);
+  transform: translateY(-2px);
+}
+.btn-accent:active {
+  transform: translateY(0);
+}
+.btn-accent:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* Secondary / ghost control (e.g. Copy email) */
+.btn-ghost {
+  color: var(--ink);
+  border: 1.5px solid color-mix(in oklab, var(--ink) 45%, transparent);
+  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+}
+.btn-ghost:hover {
+  border-color: var(--ink);
+  background-color: color-mix(in oklab, var(--ink) 8%, transparent);
+}
+.btn-ghost:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 3px;
+}
+
+/* Continuous marquee — an always-alive "selected work" ticker, distinct from the
+   static, deep-dive project cards further down. */
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: marquee-scroll var(--marquee-duration, 60s) linear infinite;
+  will-change: transform;
+}
+.marquee-track.reverse {
+  animation-direction: reverse;
+}
+.marquee:hover .marquee-track {
+  animation-play-state: paused;
+}
+@keyframes marquee-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    /* Track holds two copies; -50% lands the second copy exactly where the
+       first began, so the loop is seamless. */
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-accent {
+    transition: none;
+  }
+  .btn-accent:hover,
+  .btn-accent:active {
+    transform: none;
+  }
+  .marquee-track,
+  .marquee-track.reverse {
+    animation: none;
+  }
 }

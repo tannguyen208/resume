@@ -11,7 +11,7 @@ products and works effectively across the full stack.
 ## Experience
 
 ### Software Engineer — Vitalify Asia
-Ho Chi Minh City, Vietnam · Oct 2022 – Present
+Ho Chi Minh City, Vietnam · Aug 2022 – Present
 
 - Built and shipped 4 web applications using ReactJS, VueJS, and NextJS within agile teams of 3–6 engineers, with 2 becoming the company's most successful client products.
 - Integrated LLM-powered features, including conversational chatbots, into client products while owning the frontend architecture and reusable component libraries.
@@ -19,12 +19,12 @@ Ho Chi Minh City, Vietnam · Oct 2022 – Present
 - Designed and integrated REST APIs and backend services with Node.js / NestJS and PostgreSQL, delivering features end to end across the stack.
 
 ### Software Engineer — FPT Software
-Da Nang, Vietnam · Aug 2021 – Jan 2022
+Da Nang, Vietnam · Aug 2021 – Feb 2022
 
 - Led a 7-person frontend team building enterprise web applications with React and a .NET backend, owning front-end architecture, code reviews, and technical decisions.
 
 ### Software Developer — Sutrix Solutions
-Ho Chi Minh City, Vietnam · Jan 2021 – Apr 2021
+Ho Chi Minh City, Vietnam · Oct 2020 – Jul 2021
 
 - Developed web features with React and built a cross-platform mobile app with Flutter, delivering responsive UIs to client specifications.
 
@@ -34,7 +34,7 @@ Da Nang, Vietnam · Sep 2019 – Oct 2020
 - Developed and maintained web application features for outsourced enterprise projects using Angular across the full development lifecycle.
 
 ### Software Developer — Softech
-Da Nang, Vietnam · Jul 2018 – Mar 2019
+Da Nang, Vietnam · Mar 2018 – Aug 2019
 
 - Built web and mobile features using React and React Native, gaining hands-on experience across the full development cycle.
 
@@ -53,11 +53,23 @@ Da Nang, Vietnam · Jul 2018 – Mar 2019
 
 - **Languages:** TypeScript, JavaScript, PHP, C#, Dart, HTML/CSS, SQL
 - **Frontend:** React, Next.js, Redux, React Query, Tailwind CSS, styled-components, OpenLayers (also Vue, Angular)
+- **Testing:** Jest, React Testing Library, Cypress / Playwright, TDD
+- **Performance:** Core Web Vitals, Lighthouse, code-splitting, bundle optimization
 - **Mobile:** React Native, Flutter
 - **Backend:** Node.js, NestJS, Express, REST APIs, GraphQL (also .NET, PHP / WordPress)
 - **Databases:** PostgreSQL, MySQL, SQLServer, MongoDB, Firebase
 - **Cloud & DevOps:** AWS, Docker, CI/CD
 - **Tools:** Git, Jest, Vite / Webpack, Figma
+
+## Awards
+
+- **Best Performance Member** — Vitalify Asia
+- **Best Performance Member** — FPT Software
+
+## Open Source & Community
+
+- **AI ChatPad** — open-source ChatGPT-style React app · tannguyen208.github.io/chatgpt
+- **ReactJS Course Mentor**, Udemy (3 months)
 
 ## Education
 

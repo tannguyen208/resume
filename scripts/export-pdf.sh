@@ -8,7 +8,8 @@
 #   ./scripts/export-pdf.sh                  # converts RESUME.md and RESUME_short.md
 #   ./scripts/export-pdf.sh path/to/file.md  # converts the given file(s)
 #
-# Each PDF is written next to its source .md file.
+# Each PDF is written to src/assets/ (where the web app imports it from), so there
+# is a single copy — no duplicate next to the source .md.
 #
 # Requirements (macOS):
 #   - pandoc        (brew install pandoc)
@@ -19,6 +20,8 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 CSS="$SCRIPT_DIR/resume.css"
+OUT_DIR="$PROJECT_DIR/src/assets"   # single home for the PDFs (the app imports them)
+mkdir -p "$OUT_DIR"
 
 # --- locate tools ---------------------------------------------------------
 command -v pandoc >/dev/null 2>&1 || {
@@ -50,9 +53,8 @@ for md in "${FILES[@]}"; do
   fi
   i=$((i + 1))
   base="$(basename "${md%.md}")"
-  dir="$(cd "$(dirname "$md")" && pwd)"
   html="$WORK/$base.html"
-  pdf="$dir/$base.pdf"
+  pdf="$OUT_DIR/$base.pdf"
 
   pandoc "$md" -s --embed-resources --css "$CSS" \
     --metadata pagetitle="$base" \
