@@ -1,9 +1,3 @@
-import imgColors from '../assets/prj-colors.svg'
-import imgOmron from '../assets/prj-omron.jpg'
-import imgNta from '../assets/prj-nta.png'
-import imgDialog from '../assets/prj-dialog.png'
-import imgGomo from '../assets/prj-gomo.webp'
-import imgAmes from '../assets/prj-ames.png'
 import portrait from '../assets/avatar.png'
 import resumeFull from '../assets/RESUME.pdf?url'
 import resumeShort from '../assets/RESUME_short.pdf?url'
@@ -86,7 +80,7 @@ export interface Project {
   category: string
   name: string
   desc: string
-  image: string
+  tech: string[]
 }
 
 export const PROJECTS: Project[] = [
@@ -95,41 +89,41 @@ export const PROJECTS: Project[] = [
     category: 'Vitalify Asia',
     name: 'Colors',
     desc: 'Web app that generates family trees from PDF documents, built with Vue and NestJS.',
-    image: imgColors,
+    tech: ['Vue', 'NestJS', 'TypeScript', 'AWS'],
   },
   {
     num: '02',
     category: 'Vitalify Asia',
     name: 'OMRON Pressure',
     desc: 'Full-stack blood-pressure measurement app, implementing core features end to end with ReactJS and PHP.',
-    image: imgOmron,
+    tech: ['ReactJS', 'PHP', 'AWS'],
   },
   {
     num: '03',
     category: 'FPT Software',
     name: 'NTA UniNext',
     desc: 'Tour-management platform; led the frontend team, integrating Navitime maps with ReactJS and Redux.',
-    image: imgNta,
+    tech: ['ReactJS', 'Redux', 'Navitime API', 'MapScript'],
   },
   {
     num: '04',
     category: 'FPT Software',
     name: 'Dialog ORION',
     desc: 'Real-time worker-tracking web app rendering ~3,000 beacons per second with Angular and OpenLayers.',
-    image: imgDialog,
+    tech: ['Angular', 'RxJS', 'OpenLayers'],
   },
   {
     num: '05',
     category: 'Sutrix Solutions',
     name: 'Gomo',
     desc: 'Cross-platform mobile app for purchasing 5G SIMs with international connectivity, built in Flutter.',
-    image: imgGomo,
+    tech: ['Flutter', 'Dart', 'MobX', 'DIO'],
   },
   {
     num: '06',
     category: 'Softech',
     name: 'Ames English',
     desc: 'English-learning mobile app with guided practice across all four skills, built with React Native.',
-    image: imgAmes,
+    tech: ['React Native', 'Redux', 'Redux-Saga'],
   },
 ]

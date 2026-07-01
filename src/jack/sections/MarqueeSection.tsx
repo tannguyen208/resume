@@ -12,16 +12,18 @@ const COPY2 = [...ROW2, ...ROW2, ...ROW2]
 
 const Tile = ({ project }: { project: Project }) => (
   <figure
-    className="relative mx-1.5 shrink-0 overflow-hidden rounded-2xl"
-    style={{ width: 380, height: 244 }}
+    className="relative mx-1.5 flex shrink-0 flex-col justify-between overflow-hidden rounded-2xl border border-[#D7E2EA]/12 bg-[#D7E2EA]/[0.04] px-6 py-5"
+    style={{ width: 340, height: 196 }}
   >
-    <img src={project.image} alt="" loading="lazy" className="h-full w-full object-cover" />
-    <figcaption className="absolute inset-x-0 bottom-0 flex flex-col gap-1 bg-gradient-to-t from-black/85 via-black/40 to-transparent px-5 pb-4 pt-12">
-      <span className="text-[0.7rem] font-medium uppercase tracking-[0.22em] text-[#D7E2EA]/85">
-        {project.category}
-      </span>
-      <span className="text-lg font-medium uppercase leading-tight text-white">{project.name}</span>
-    </figcaption>
+    <span className="text-[0.7rem] font-medium uppercase tracking-[0.24em] text-[#D7E2EA]/55">
+      {project.category}
+    </span>
+    <div>
+      <div className="font-display text-2xl font-bold uppercase leading-none text-[#D7E2EA]">
+        {project.name}
+      </div>
+      <div className="mt-2 truncate text-xs text-[#D7E2EA]/50">{project.tech.join(' · ')}</div>
+    </div>
   </figure>
 )
 

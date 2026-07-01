@@ -20,6 +20,7 @@ set -euo pipefail
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_DIR="$(cd "$SCRIPT_DIR/.." && pwd)"
 CSS="$SCRIPT_DIR/resume.css"
+FONTS_CSS="$SCRIPT_DIR/fonts.css"   # brand fonts embedded as base64 (offline-safe)
 OUT_DIR="$PROJECT_DIR/src/assets"   # single home for the PDFs (the app imports them)
 mkdir -p "$OUT_DIR"
 
@@ -56,7 +57,7 @@ for md in "${FILES[@]}"; do
   html="$WORK/$base.html"
   pdf="$OUT_DIR/$base.pdf"
 
-  pandoc "$md" -s --embed-resources --css "$CSS" \
+  pandoc "$md" -s --embed-resources --css "$FONTS_CSS" --css "$CSS" \
     --metadata pagetitle="$base" \
     -o "$html"
 

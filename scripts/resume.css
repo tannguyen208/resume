@@ -1,76 +1,142 @@
-@page {
-  size: A4;
-  margin: 14mm 16mm;
+/* ============================================================================
+   Résumé print stylesheet — single column, brand fonts, restrained accent.
+   Be Vietnam Pro is embedded via fonts.css. Hierarchy is
+   carried by type + space so it survives grayscale printing; colour is a
+   restrained accent only.
+   ============================================================================ */
+
+:root {
+  --ink: #1a1a1a;          /* body text */
+  --ink-strong: #0b0b0b;   /* name, headings, emphasis */
+  --muted: #5b5b5b;        /* meta: dates, location, stacks */
+  --accent: #9d1373;       /* deep, print-safe magenta (darker cousin of #B600A8) */
+  --hair: #e2e2e2;         /* faint divider */
 }
+
+@page { size: A4; margin: 13mm 15mm; }
 
 * { box-sizing: border-box; }
 
 body {
-  font-family: -apple-system, "Helvetica Neue", "Segoe UI", Arial, sans-serif;
-  font-size: 10.5pt;
-  line-height: 1.34;
-  color: #1b1b1b;
+  font-family: 'Be Vietnam Pro', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-size: 9.9pt;
+  line-height: 1.42;
+  color: var(--ink);
+  margin: 0;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------- Header ------------------------------------------------------- */
+h1 {                                    /* Name */
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 24pt;
+  font-weight: 800;
+  letter-spacing: -0.015em;
+  line-height: 1.02;
+  color: var(--ink-strong);
   margin: 0;
 }
-
-/* Name */
-h1 {
-  font-size: 21pt;
-  font-weight: 700;
-  text-align: center;
-  letter-spacing: 0.5px;
-  margin: 0 0 3pt;
+h1 + p {                                /* Contact line (directly after the name) */
+  font-size: 8.9pt;
+  color: var(--muted);
+  margin: 6pt 0 0;
+  padding-bottom: 10pt;
+  border-bottom: 1px solid var(--hair);
 }
+h1 + p a { color: var(--accent); }
 
-/* Contact line (paragraph immediately after the name) */
-h1 + p {
-  text-align: center;
-  font-size: 9.5pt;
-  color: #444;
-  margin: 0 0 10pt;
-}
-
-/* Section headings */
+/* ---------- Section headings -------------------------------------------- */
 h2 {
-  font-size: 11.5pt;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 11pt;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  color: var(--ink-strong);
+  margin: 21pt 0 8pt;
+  padding-bottom: 3pt;
+  border-bottom: 1.5px solid var(--accent);
+  break-after: avoid;
+}
+
+/* ---------- Experience entries ------------------------------------------ */
+h3 {                                    /* Entry title: Company */
+  font-size: 10.6pt;
+  font-weight: 700;
+  color: var(--ink-strong);
+  margin: 14pt 0 0;
+  break-after: avoid;
+}
+h3 .dates {                             /* Dates — right-aligned timeline */
+  float: right;
+  font-weight: 500;
+  font-size: 9.2pt;
+  color: var(--muted);
+  letter-spacing: 0.01em;
+}
+h3 + p {                                /* Meta: role · location */
+  font-size: 9.2pt;
+  color: var(--muted);
+  margin: 1.5pt 0 3pt;
+}
+h3 + p strong { color: var(--accent); font-weight: 600; }  /* role emphasis */
+
+p { margin: 3pt 0; }
+
+/* Achievement bullets */
+ul { margin: 3pt 0 5pt; padding-left: 15pt; }
+li { margin: 0 0 2.5pt; }
+li::marker { color: var(--accent); }
+
+strong { font-weight: 700; color: var(--ink-strong); }
+em { font-style: italic; color: var(--muted); }
+a { color: var(--ink); text-decoration: none; }
+
+/* ---------- Projects sub-group: indented + hairline connector so it reads as
+   "projects done at the job above", not a sibling section. The 1px neutral rule
+   is a nesting connector (not a coloured accent stripe). --------------------- */
+.projects {
+  margin: 7pt 0 3pt;
+  padding-left: 14pt;
+  border-left: 1px solid var(--hair);
+}
+.projects > p:first-child {             /* "Key Projects" label */
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 8.2pt;
   font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 1px;
-  border-bottom: 1.2px solid #333;
-  padding-bottom: 2pt;
-  margin: 13pt 0 6pt;
+  letter-spacing: 0.12em;
+  color: var(--accent);
+  margin: 0 0 4pt;
 }
+.projects > p {                         /* project name line */
+  font-size: 9.7pt;
+  margin: 5pt 0 1pt;
+  break-after: avoid;
+}
+.projects > p strong { color: var(--ink-strong); }
+.projects ul { margin: 0 0 2pt; padding-left: 15pt; }
+.projects li { margin: 0 0 2.5pt; break-inside: avoid; }
+.projects > p, .projects ul { break-inside: avoid; }
 
-/* Entry titles (job / project / degree) */
-h3 {
-  font-size: 10.8pt;
+/* ---------- Skills (aligned label → items) ------------------------------ */
+dl {
+  margin: 4pt 0 0;
+  display: grid;
+  grid-template-columns: 27% 1fr;
+  column-gap: 12pt;
+  row-gap: 4.5pt;
+}
+dt {
   font-weight: 700;
-  margin: 8pt 0 0;
+  color: var(--ink-strong);
+  font-size: 9.3pt;
+  align-self: start;
 }
+dd { margin: 0; color: var(--ink); }
 
-/* Meta line (location · dates) directly after an entry title */
-h3 + p {
-  font-size: 9.5pt;
-  font-style: italic;
-  color: #555;
-  margin: 1pt 0 3pt;
-}
-
-ul {
-  margin: 3pt 0 6pt;
-  padding-left: 16pt;
-}
-
-li {
-  margin: 0 0 2pt;
-}
-
-p { margin: 4pt 0; }
-
-a { color: #1b1b1b; text-decoration: none; }
-
-strong { font-weight: 700; }
-
-/* Avoid breaking an entry across pages where possible */
-h3 { break-after: avoid; }
+/* ---------- Page-break hygiene ------------------------------------------ */
 h2 { break-after: avoid; }
+h3 { break-after: avoid; }
+li { break-inside: avoid; }

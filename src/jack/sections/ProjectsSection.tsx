@@ -81,15 +81,30 @@ const ProjectCard = ({ project, index, total }: ProjectCardProps) => {
           {project.desc}
         </p>
 
-        {/* Single project image */}
-        <div className={`overflow-hidden bg-[#D7E2EA]/5 ${CARD_RADIUS}`}>
-          <img
-            src={project.image}
-            alt={project.name}
-            loading="lazy"
-            className="w-full object-cover"
-            style={{ height: 'clamp(220px, 34vw, 460px)' }}
-          />
+        {/* Tech-stack panel — text-forward visual (project imagery removed for licensing) */}
+        <div
+          className={`relative overflow-hidden border border-[#D7E2EA]/12 bg-[#D7E2EA]/[0.03] ${CARD_RADIUS}`}
+        >
+          <span
+            aria-hidden
+            className="font-display pointer-events-none absolute -right-3 bottom-[-0.16em] font-black uppercase leading-none text-[#D7E2EA]/[0.05]"
+            style={{ fontSize: 'clamp(3.5rem, 11vw, 8.5rem)' }}
+          >
+            {project.name}
+          </span>
+          <div className="relative px-6 py-9 sm:px-10 sm:py-12">
+            <span className="text-xs uppercase tracking-[0.25em] text-[#D7E2EA]/45">Built with</span>
+            <div className="mt-5 flex flex-wrap gap-2.5 sm:gap-3">
+              {project.tech.map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full border border-[#D7E2EA]/25 px-4 py-2 text-sm font-medium text-[#D7E2EA] sm:text-lg"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          </div>
         </div>
       </motion.div>
     </div>
