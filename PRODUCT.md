@@ -15,7 +15,7 @@ they're trying to get done: decide, fast, whether this person is worth a convers
 ## Product Purpose
 
 A personal portfolio landing page that gets Tan shortlisted and contacted for senior
-frontend roles. It exists to make one argument — *elite frontend craft* — and to make
+frontend roles. It exists to make one argument — _elite frontend craft_ — and to make
 it by embodiment rather than assertion: the page is itself a work sample. Around ~8
 years of experience (React, Vue, Next.js, plus Node/NestJS backend and AI integration)
 is the substance; the design is the proof. Success = a hiring manager finishes the
@@ -46,7 +46,7 @@ shouting, never stiff. Voice: first-person, plain-spoken, warm, low on buzzwords
 ## Design Principles
 
 1. **The site is the proof.** Show, don't tell. Every interaction, transition, and
-   pixel is a work sample; the page must *demonstrate* elite frontend craft, not claim
+   pixel is a work sample; the page must _demonstrate_ elite frontend craft, not claim
    it. If a section doesn't withstand a senior engineer's inspection, it undercuts the
    entire pitch.
 2. **Bold, but never sloppy.** Go big and confident — but precision is what converts

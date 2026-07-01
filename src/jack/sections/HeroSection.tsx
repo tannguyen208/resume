@@ -5,7 +5,10 @@ import { DownloadCV } from '../components/DownloadCV'
 import { NAV_LINKS, PERSON } from '../data'
 
 export const HeroSection = () => (
-  <section className="relative flex h-screen flex-col" style={{ overflowX: 'clip' }}>
+  <section
+    className="relative flex h-screen flex-col"
+    style={{ overflowX: 'clip' }}
+  >
     {/* Navbar */}
     <FadeIn
       as="nav"

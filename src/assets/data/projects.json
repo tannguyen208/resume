@@ -47,10 +47,7 @@
       "position": "FullStack Developer",
       "size": 5,
       "logo": "prj-colors.svg",
-      "responsibility": [
-        "Designer, Developer",
-        "Coding main function"
-      ],
+      "responsibility": ["Designer, Developer", "Coding main function"],
       "technology": "NestJS, Vue ...",
       "tool": "Git, AWS, RedMine, ..."
     },
@@ -61,10 +58,7 @@
       "position": "FullStack Developer",
       "size": 4,
       "logo": "prj-omron.jpg",
-      "responsibility": [
-        "Developer",
-        "Coding main function"
-      ],
+      "responsibility": ["Developer", "Coding main function"],
       "technology": "PHP, ReactJS ...",
       "tool": "Git, AWS, Backlog, ..."
     },
@@ -90,10 +84,7 @@
       "position": "Frontend Developer",
       "size": 18,
       "logo": "prj-gomo.webp",
-      "responsibility": [
-        "Develop",
-        "Fix bugs and maintain."
-      ],
+      "responsibility": ["Develop", "Fix bugs and maintain."],
       "technology": "Dart, Flutter Framework, Mobx, DIO ...",
       "tool": "Jira, Gitlab"
     },
@@ -104,10 +95,7 @@
       "position": "Develop",
       "size": 23,
       "logo": "prj-lg.jpeg",
-      "responsibility": [
-        "Develop and fix bugs",
-        "Testing"
-      ],
+      "responsibility": ["Develop and fix bugs", "Testing"],
       "technology": "Javascript, Websquare 5",
       "tool": "Jira, SVN, Gitlab, U+"
     },

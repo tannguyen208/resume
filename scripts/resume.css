@@ -6,19 +6,25 @@
    ============================================================================ */
 
 :root {
-  --ink: #1a1a1a;          /* body text */
-  --ink-strong: #0b0b0b;   /* name, headings, emphasis */
-  --muted: #5b5b5b;        /* meta: dates, location, stacks */
-  --accent: #9d1373;       /* deep, print-safe magenta (darker cousin of #B600A8) */
-  --hair: #e2e2e2;         /* faint divider */
+  --ink: #1a1a1a; /* body text */
+  --ink-strong: #0b0b0b; /* name, headings, emphasis */
+  --muted: #5b5b5b; /* meta: dates, location, stacks */
+  --accent: #9d1373; /* deep, print-safe magenta (darker cousin of #B600A8) */
+  --hair: #e2e2e2; /* faint divider */
 }
 
-@page { size: A4; margin: 13mm 15mm; }
+@page {
+  size: A4;
+  margin: 13mm 15mm;
+}
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
 body {
-  font-family: 'Be Vietnam Pro', -apple-system, 'Helvetica Neue', Arial, sans-serif;
+  font-family: 'Be Vietnam Pro', -apple-system, 'Helvetica Neue', Arial,
+    sans-serif;
   font-size: 9.9pt;
   line-height: 1.42;
   color: var(--ink);
@@ -28,7 +34,8 @@ body {
 }
 
 /* ---------- Header ------------------------------------------------------- */
-h1 {                                    /* Name */
+h1 {
+  /* Name */
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 24pt;
   font-weight: 800;
@@ -37,14 +44,17 @@ h1 {                                    /* Name */
   color: var(--ink-strong);
   margin: 0;
 }
-h1 + p {                                /* Contact line (directly after the name) */
+h1 + p {
+  /* Contact line (directly after the name) */
   font-size: 8.9pt;
   color: var(--muted);
   margin: 6pt 0 0;
   padding-bottom: 10pt;
   border-bottom: 1px solid var(--hair);
 }
-h1 + p a { color: var(--accent); }
+h1 + p a {
+  color: var(--accent);
+}
 
 /* ---------- Section headings -------------------------------------------- */
 h2 {
@@ -61,37 +71,61 @@ h2 {
 }
 
 /* ---------- Experience entries ------------------------------------------ */
-h3 {                                    /* Entry title: Company */
+h3 {
+  /* Entry title: Company */
   font-size: 10.6pt;
   font-weight: 700;
   color: var(--ink-strong);
   margin: 14pt 0 0;
   break-after: avoid;
 }
-h3 .dates {                             /* Dates — right-aligned timeline */
+h3 .dates {
+  /* Dates — right-aligned timeline */
   float: right;
   font-weight: 500;
   font-size: 9.2pt;
   color: var(--muted);
   letter-spacing: 0.01em;
 }
-h3 + p {                                /* Meta: role · location */
+h3 + p {
+  /* Meta: role · location */
   font-size: 9.2pt;
   color: var(--muted);
   margin: 1.5pt 0 3pt;
 }
-h3 + p strong { color: var(--accent); font-weight: 600; }  /* role emphasis */
+h3 + p strong {
+  color: var(--accent);
+  font-weight: 600;
+} /* role emphasis */
 
-p { margin: 3pt 0; }
+p {
+  margin: 3pt 0;
+}
 
 /* Achievement bullets */
-ul { margin: 3pt 0 5pt; padding-left: 15pt; }
-li { margin: 0 0 2.5pt; }
-li::marker { color: var(--accent); }
+ul {
+  margin: 3pt 0 5pt;
+  padding-left: 15pt;
+}
+li {
+  margin: 0 0 2.5pt;
+}
+li::marker {
+  color: var(--accent);
+}
 
-strong { font-weight: 700; color: var(--ink-strong); }
-em { font-style: italic; color: var(--muted); }
-a { color: var(--ink); text-decoration: none; }
+strong {
+  font-weight: 700;
+  color: var(--ink-strong);
+}
+em {
+  font-style: italic;
+  color: var(--muted);
+}
+a {
+  color: var(--ink);
+  text-decoration: none;
+}
 
 /* ---------- Projects sub-group: indented + hairline connector so it reads as
    "projects done at the job above", not a sibling section. The 1px neutral rule
@@ -101,7 +135,8 @@ a { color: var(--ink); text-decoration: none; }
   padding-left: 14pt;
   border-left: 1px solid var(--hair);
 }
-.projects > p:first-child {             /* "Key Projects" label */
+.projects > p:first-child {
+  /* "Key Projects" label */
   font-family: 'Be Vietnam Pro', sans-serif;
   font-size: 8.2pt;
   font-weight: 700;
@@ -110,15 +145,27 @@ a { color: var(--ink); text-decoration: none; }
   color: var(--accent);
   margin: 0 0 4pt;
 }
-.projects > p {                         /* project name line */
+.projects > p {
+  /* project name line */
   font-size: 9.7pt;
   margin: 5pt 0 1pt;
   break-after: avoid;
 }
-.projects > p strong { color: var(--ink-strong); }
-.projects ul { margin: 0 0 2pt; padding-left: 15pt; }
-.projects li { margin: 0 0 2.5pt; break-inside: avoid; }
-.projects > p, .projects ul { break-inside: avoid; }
+.projects > p strong {
+  color: var(--ink-strong);
+}
+.projects ul {
+  margin: 0 0 2pt;
+  padding-left: 15pt;
+}
+.projects li {
+  margin: 0 0 2.5pt;
+  break-inside: avoid;
+}
+.projects > p,
+.projects ul {
+  break-inside: avoid;
+}
 
 /* ---------- Skills (aligned label → items) ------------------------------ */
 dl {
@@ -134,9 +181,18 @@ dt {
   font-size: 9.3pt;
   align-self: start;
 }
-dd { margin: 0; color: var(--ink); }
+dd {
+  margin: 0;
+  color: var(--ink);
+}
 
 /* ---------- Page-break hygiene ------------------------------------------ */
-h2 { break-after: avoid; }
-h3 { break-after: avoid; }
-li { break-inside: avoid; }
+h2 {
+  break-after: avoid;
+}
+h3 {
+  break-after: avoid;
+}
+li {
+  break-inside: avoid;
+}

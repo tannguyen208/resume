@@ -10,7 +10,8 @@ export const PERSON = {
   github: 'https://github.com/tannguyen208',
   githubLabel: 'github.com/tannguyen208',
   location: 'Ho Chi Minh City, Vietnam',
-  tagline: 'a senior frontend engineer crafting fast, accessible, and unforgettable web products',
+  tagline:
+    'a senior frontend engineer crafting fast, accessible, and unforgettable web products',
   portrait,
 }
 

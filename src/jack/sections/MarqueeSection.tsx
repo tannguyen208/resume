@@ -22,7 +22,9 @@ const Tile = ({ project }: { project: Project }) => (
       <div className="font-display text-2xl font-bold uppercase leading-none text-[#D7E2EA]">
         {project.name}
       </div>
-      <div className="mt-2 truncate text-xs text-[#D7E2EA]/50">{project.tech.join(' · ')}</div>
+      <div className="mt-2 truncate text-xs text-[#D7E2EA]/50">
+        {project.tech.join(' · ')}
+      </div>
     </div>
   </figure>
 )
@@ -39,12 +41,18 @@ export const MarqueeSection = () => (
     className="marquee overflow-hidden bg-[#0C0C0C] pt-24 sm:pt-32 md:pt-40 pb-10"
   >
     <div className="flex flex-col gap-3">
-      <div className="marquee-track" style={{ '--marquee-duration': '48s' } as CSSProperties}>
+      <div
+        className="marquee-track"
+        style={{ '--marquee-duration': '48s' } as CSSProperties}
+      >
         {[...COPY1, ...COPY1].map((p, i) => (
           <Tile key={`r1-${i}`} project={p} />
         ))}
       </div>
-      <div className="marquee-track reverse" style={{ '--marquee-duration': '60s' } as CSSProperties}>
+      <div
+        className="marquee-track reverse"
+        style={{ '--marquee-duration': '60s' } as CSSProperties}
+      >
         {[...COPY2, ...COPY2].map((p, i) => (
           <Tile key={`r2-${i}`} project={p} />
         ))}

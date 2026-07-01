@@ -1,8 +1,8 @@
-import React from 'react';
-import { ResumeData } from '../../data/resume';
+import React from 'react'
+import { ResumeData } from '../../data/resume'
 
 interface LanguagesProps {
-  data: ResumeData['languages'];
+  data: ResumeData['languages']
 }
 
 export const Languages: React.FC<LanguagesProps> = ({ data }) => {
@@ -14,12 +14,17 @@ export const Languages: React.FC<LanguagesProps> = ({ data }) => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
         {data.map((lang, index) => (
-          <div key={index} className="bg-white p-4 rounded-lg shadow-sm text-center">
-            <h3 className="font-semibold text-gray-800 mb-1">{lang.language}</h3>
+          <div
+            key={index}
+            className="bg-white p-4 rounded-lg shadow-sm text-center"
+          >
+            <h3 className="font-semibold text-gray-800 mb-1">
+              {lang.language}
+            </h3>
             <p className="text-gray-600 text-sm">{lang.level}</p>
           </div>
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

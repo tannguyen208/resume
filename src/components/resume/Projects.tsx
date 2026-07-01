@@ -1,8 +1,8 @@
-import React from 'react';
-import { ResumeData } from '../../data/resume';
+import React from 'react'
+import { ResumeData } from '../../data/resume'
 
 interface ProjectsProps {
-  data: ResumeData['projects'];
+  data: ResumeData['projects']
 }
 
 export const Projects: React.FC<ProjectsProps> = ({ data }) => {
@@ -14,10 +14,17 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
       </h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {data.map((project, index) => (
-          <div key={index} className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-            <h3 className="text-lg font-semibold text-gray-800 mb-2">{project.name}</h3>
-            <p className="text-gray-600 mb-4 text-sm leading-relaxed">{project.description}</p>
-            
+          <div
+            key={index}
+            className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow"
+          >
+            <h3 className="text-lg font-semibold text-gray-800 mb-2">
+              {project.name}
+            </h3>
+            <p className="text-gray-600 mb-4 text-sm leading-relaxed">
+              {project.description}
+            </p>
+
             <div className="flex flex-wrap gap-2 mb-4">
               {project.technologies.map((tech, techIndex) => (
                 <span
@@ -28,7 +35,7 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
                 </span>
               ))}
             </div>
-            
+
             <div className="flex space-x-3">
               {project.link && (
                 <a
@@ -55,5 +62,5 @@ export const Projects: React.FC<ProjectsProps> = ({ data }) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

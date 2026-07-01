@@ -22,7 +22,12 @@ export const ProjectsSection = () => (
 
     <div className="mx-auto max-w-6xl">
       {PROJECTS.map((project, i) => (
-        <ProjectCard key={project.num} project={project} index={i} total={PROJECTS.length} />
+        <ProjectCard
+          key={project.num}
+          project={project}
+          index={i}
+          total={PROJECTS.length}
+        />
       ))}
     </div>
   </section>
@@ -93,7 +98,9 @@ const ProjectCard = ({ project, index, total }: ProjectCardProps) => {
             {project.name}
           </span>
           <div className="relative px-6 py-9 sm:px-10 sm:py-12">
-            <span className="text-xs uppercase tracking-[0.25em] text-[#D7E2EA]/45">Built with</span>
+            <span className="text-xs uppercase tracking-[0.25em] text-[#D7E2EA]/45">
+              Built with
+            </span>
             <div className="mt-5 flex flex-wrap gap-2.5 sm:gap-3">
               {project.tech.map((t) => (
                 <span

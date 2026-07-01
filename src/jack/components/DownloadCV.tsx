@@ -16,7 +16,10 @@ const ITEMS = [RESUME.full, RESUME.short]
  * into a later sibling), so it isn't hidden by stacking order or clipped. Closes
  * on outside click, Escape (returning focus to the trigger), or selection.
  */
-export const DownloadCV = ({ className = '', menuPlacement = 'bottom' }: DownloadCVProps) => {
+export const DownloadCV = ({
+  className = '',
+  menuPlacement = 'bottom',
+}: DownloadCVProps) => {
   const [open, setOpen] = useState(false)
   const wrapRef = useRef<HTMLDivElement>(null)
   const btnRef = useRef<HTMLButtonElement>(null)
@@ -26,7 +29,8 @@ export const DownloadCV = ({ className = '', menuPlacement = 'bottom' }: Downloa
   useEffect(() => {
     if (!open) return
     const onPointerDown = (e: MouseEvent) => {
-      if (wrapRef.current && !wrapRef.current.contains(e.target as Node)) setOpen(false)
+      if (wrapRef.current && !wrapRef.current.contains(e.target as Node))
+        setOpen(false)
     }
     const onKey = (e: KeyboardEvent) => {
       if (e.key === 'Escape') {
@@ -59,7 +63,9 @@ export const DownloadCV = ({ className = '', menuPlacement = 'bottom' }: Downloa
         <ChevronDown
           size={15}
           aria-hidden
-          className={`transition-transform duration-200 motion-reduce:transition-none ${open ? 'rotate-180' : ''}`}
+          className={`transition-transform duration-200 motion-reduce:transition-none ${
+            open ? 'rotate-180' : ''
+          }`}
         />
       </button>
 
@@ -82,9 +88,15 @@ export const DownloadCV = ({ className = '', menuPlacement = 'bottom' }: Downloa
               onClick={() => setOpen(false)}
               className="flex items-center gap-3 rounded-xl px-3 py-2.5 text-left normal-case tracking-normal transition-colors hover:bg-[#d7e2ea]/10 focus-visible:bg-[#d7e2ea]/10 focus-visible:outline-none"
             >
-              <FileText size={18} className="shrink-0 text-[#d7e2ea]" aria-hidden />
+              <FileText
+                size={18}
+                className="shrink-0 text-[#d7e2ea]"
+                aria-hidden
+              />
               <span className="flex flex-col">
-                <span className="text-sm font-semibold text-[#d7e2ea]">{item.label}</span>
+                <span className="text-sm font-semibold text-[#d7e2ea]">
+                  {item.label}
+                </span>
                 <span className="text-xs text-[#d7e2ea]/60">{item.meta}</span>
               </span>
             </a>

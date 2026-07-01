@@ -1,8 +1,8 @@
-import React from 'react';
-import { ResumeData } from '../../data/resume';
+import React from 'react'
+import { ResumeData } from '../../data/resume'
 
 interface ExperienceProps {
-  data: ResumeData['experience'];
+  data: ResumeData['experience']
 }
 
 export const Experience: React.FC<ExperienceProps> = ({ data }) => {
@@ -18,12 +18,16 @@ export const Experience: React.FC<ExperienceProps> = ({ data }) => {
             <div className="bg-white p-6 rounded-lg shadow-sm">
               <div className="flex flex-col md:flex-row md:justify-between md:items-start mb-4">
                 <div>
-                  <h3 className="text-xl font-semibold text-gray-800">{exp.position}</h3>
+                  <h3 className="text-xl font-semibold text-gray-800">
+                    {exp.position}
+                  </h3>
                   <p className="text-blue-600 font-medium">{exp.company}</p>
                 </div>
-                <span className="text-gray-500 text-sm mt-1 md:mt-0">{exp.duration}</span>
+                <span className="text-gray-500 text-sm mt-1 md:mt-0">
+                  {exp.duration}
+                </span>
               </div>
-              
+
               <ul className="mb-4 space-y-2">
                 {exp.description.map((desc, descIndex) => (
                   <li key={descIndex} className="flex items-start">
@@ -32,7 +36,7 @@ export const Experience: React.FC<ExperienceProps> = ({ data }) => {
                   </li>
                 ))}
               </ul>
-              
+
               <div className="flex flex-wrap gap-2">
                 {exp.technologies.map((tech, techIndex) => (
                   <span
@@ -48,5 +52,5 @@ export const Experience: React.FC<ExperienceProps> = ({ data }) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

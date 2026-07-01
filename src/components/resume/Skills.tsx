@@ -1,8 +1,8 @@
-import React from 'react';
-import { ResumeData } from '../../data/resume';
+import React from 'react'
+import { ResumeData } from '../../data/resume'
 
 interface SkillsProps {
-  data: ResumeData['skills'];
+  data: ResumeData['skills']
 }
 
 export const Skills: React.FC<SkillsProps> = ({ data }) => {
@@ -15,7 +15,9 @@ export const Skills: React.FC<SkillsProps> = ({ data }) => {
       <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
         {data.map((skill, index) => (
           <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
-            <h3 className="text-lg font-semibold text-gray-800 mb-4">{skill.category}</h3>
+            <h3 className="text-lg font-semibold text-gray-800 mb-4">
+              {skill.category}
+            </h3>
             <div className="flex flex-wrap gap-2">
               {skill.items.map((item, itemIndex) => (
                 <span
@@ -30,5 +32,5 @@ export const Skills: React.FC<SkillsProps> = ({ data }) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}

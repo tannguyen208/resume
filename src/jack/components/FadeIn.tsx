@@ -1,5 +1,10 @@
 import { motion, useReducedMotion } from 'framer-motion'
-import type { ComponentType, CSSProperties, ElementType, ReactNode } from 'react'
+import type {
+  ComponentType,
+  CSSProperties,
+  ElementType,
+  ReactNode,
+} from 'react'
 
 interface FadeInProps {
   children: ReactNode
@@ -24,8 +29,9 @@ export const FadeIn = ({
   style,
 }: FadeInProps) => {
   // framer-motion v10 exposes motion.<tag>; pick the matching motion component.
-  const MotionTag = (((motion as unknown) as Record<string, unknown>)[as as string] ??
-    motion.div) as ComponentType<any>
+  const MotionTag = ((motion as unknown as Record<string, unknown>)[
+    as as string
+  ] ?? motion.div) as ComponentType<any>
 
   const reduce = useReducedMotion()
 

@@ -55,7 +55,11 @@ export const CopyEmail = ({ email, className = '' }: CopyEmailProps) => {
       onClick={copy}
       className={`btn-ghost inline-flex items-center justify-center gap-2 rounded-full font-semibold uppercase tracking-widest px-8 py-3 sm:px-10 sm:py-3.5 md:px-12 md:py-4 text-xs sm:text-sm md:text-base ${className}`.trim()}
     >
-      {copied ? <Check size={16} aria-hidden /> : <Copy size={16} aria-hidden />}
+      {copied ? (
+        <Check size={16} aria-hidden />
+      ) : (
+        <Copy size={16} aria-hidden />
+      )}
       <span aria-live="polite">{copied ? 'Copied' : 'Copy email'}</span>
     </button>
   )

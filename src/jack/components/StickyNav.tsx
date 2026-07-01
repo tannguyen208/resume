@@ -24,7 +24,9 @@ export const StickyNav = () => {
     let raf = 0
     const onScroll = () => {
       cancelAnimationFrame(raf)
-      raf = requestAnimationFrame(() => setVisible(window.scrollY > window.innerHeight * 0.7))
+      raf = requestAnimationFrame(() =>
+        setVisible(window.scrollY > window.innerHeight * 0.7)
+      )
     }
     onScroll()
     window.addEventListener('scroll', onScroll, { passive: true })
@@ -36,9 +38,9 @@ export const StickyNav = () => {
 
   // Whichever section owns the vertical-center band is active.
   useEffect(() => {
-    const sections = SECTION_IDS.map((id) => document.getElementById(id)).filter(
-      (el): el is HTMLElement => Boolean(el),
-    )
+    const sections = SECTION_IDS.map((id) =>
+      document.getElementById(id)
+    ).filter((el): el is HTMLElement => Boolean(el))
     if (!sections.length) return
     const observer = new IntersectionObserver(
       (entries) => {
@@ -46,7 +48,7 @@ export const StickyNav = () => {
           if (entry.isIntersecting) setActive(entry.target.id)
         })
       },
-      { rootMargin: '-45% 0px -50% 0px', threshold: 0 },
+      { rootMargin: '-45% 0px -50% 0px', threshold: 0 }
     )
     sections.forEach((el) => observer.observe(el))
     return () => observer.disconnect()
@@ -55,7 +57,9 @@ export const StickyNav = () => {
   const toTop = () =>
     window.scrollTo({
       top: 0,
-      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth',
+      behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+        ? 'auto'
+        : 'smooth',
     })
 
   return (
@@ -85,7 +89,9 @@ export const StickyNav = () => {
                   href={`#${id}`}
                   aria-current={isActive ? 'true' : undefined}
                   className={`relative inline-block py-1 text-[11px] font-medium uppercase tracking-wider transition-colors sm:text-sm ${
-                    isActive ? 'text-[#d7e2ea]' : 'text-[#d7e2ea]/60 hover:text-[#d7e2ea]/90'
+                    isActive
+                      ? 'text-[#d7e2ea]'
+                      : 'text-[#d7e2ea]/60 hover:text-[#d7e2ea]/90'
                   }`}
                 >
                   {link}

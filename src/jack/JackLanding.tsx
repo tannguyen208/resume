@@ -34,7 +34,10 @@ export const JackLanding = () => (
         <CopyEmail email={PERSON.email} />
       </div>
       <div className="mt-8 flex flex-col items-center gap-2 text-[#D7E2EA]">
-        <a href={`mailto:${PERSON.email}`} className="transition-opacity hover:opacity-70">
+        <a
+          href={`mailto:${PERSON.email}`}
+          className="transition-opacity hover:opacity-70"
+        >
           {PERSON.email}
         </a>
         <a

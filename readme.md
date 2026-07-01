@@ -43,6 +43,7 @@ src/
 ## 🎯 Sample Data
 
 The app ships with sample data for:
+
 - Full Stack Developer
 - 3+ years of experience
 - React, Node.js, TypeScript
@@ -66,6 +67,7 @@ The app ships with sample data for:
 ## 🎨 Customization
 
 Easily change:
+
 - Colors in the Tailwind config
 - Layout in the components
 - Data in resume.ts

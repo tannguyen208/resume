@@ -36,7 +36,11 @@ export const ServicesSection = () => (
             </h3>
             <p
               className="font-light leading-relaxed max-w-2xl mt-2"
-              style={{ fontSize: 'clamp(0.85rem, 1.6vw, 1.25rem)', color: '#0C0C0C', opacity: 0.6 }}
+              style={{
+                fontSize: 'clamp(0.85rem, 1.6vw, 1.25rem)',
+                color: '#0C0C0C',
+                opacity: 0.6,
+              }}
             >
               {item.desc}
             </p>

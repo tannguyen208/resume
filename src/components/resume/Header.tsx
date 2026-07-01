@@ -1,8 +1,8 @@
-import React from 'react';
-import { ResumeData } from '../../data/resume';
+import React from 'react'
+import { ResumeData } from '../../data/resume'
 
 interface HeaderProps {
-  data: ResumeData['personalInfo'];
+  data: ResumeData['personalInfo']
 }
 
 export const Header: React.FC<HeaderProps> = ({ data }) => {
@@ -45,5 +45,5 @@ export const Header: React.FC<HeaderProps> = ({ data }) => {
         </div>
       </div>
     </header>
-  );
-};
+  )
+}

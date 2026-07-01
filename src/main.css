@@ -64,7 +64,8 @@ html {
   background: var(--accent);
   color: #fff;
   box-shadow: 0 10px 30px -10px var(--accent-glow);
-  transition: background 0.2s ease, box-shadow 0.25s ease, transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
+  transition: background 0.2s ease, box-shadow 0.25s ease,
+    transform 0.25s cubic-bezier(0.22, 1, 0.36, 1);
 }
 .btn-accent:hover {
   background: var(--accent-hover);
@@ -83,7 +84,8 @@ html {
 .btn-ghost {
   color: var(--ink);
   border: 1.5px solid color-mix(in oklab, var(--ink) 45%, transparent);
-  transition: border-color 0.2s ease, background-color 0.2s ease, color 0.2s ease;
+  transition: border-color 0.2s ease, background-color 0.2s ease,
+    color 0.2s ease;
 }
 .btn-ghost:hover {
   border-color: var(--ink);

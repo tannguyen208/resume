@@ -1,8 +1,8 @@
-import React from 'react';
-import { ResumeData } from '../../data/resume';
+import React from 'react'
+import { ResumeData } from '../../data/resume'
 
 interface EducationProps {
-  data: ResumeData['education'];
+  data: ResumeData['education']
 }
 
 export const Education: React.FC<EducationProps> = ({ data }) => {
@@ -17,7 +17,9 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
           <div key={index} className="bg-white p-6 rounded-lg shadow-sm">
             <div className="flex flex-col md:flex-row md:justify-between md:items-start">
               <div>
-                <h3 className="text-lg font-semibold text-gray-800">{edu.degree}</h3>
+                <h3 className="text-lg font-semibold text-gray-800">
+                  {edu.degree}
+                </h3>
                 <p className="text-blue-600 font-medium">{edu.school}</p>
               </div>
               <div className="text-right mt-2 md:mt-0">
@@ -31,5 +33,5 @@ export const Education: React.FC<EducationProps> = ({ data }) => {
         ))}
       </div>
     </section>
-  );
-};
+  )
+}
